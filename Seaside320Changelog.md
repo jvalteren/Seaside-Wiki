@@ -19,8 +19,9 @@
   * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see #820.
   * Dialects with namespaces (eg. VM) need to implement GRPlatform >> #bindingOf:, an example implementation can be found in the comments.
   * [#262](https://github.com/SeasideSt/Seaside/issues/262) Creating a new session is O(n)
-    * WASession >> #buildCache has been renamed to createDocumentHandlerCache and returns a new cache instance
-    * WASession >> #createCache has been renamed to createContinuationCache and returns a new cache instance
+    * `WASession >> #buildCache` has been renamed to `#createDocumentHandlerCache` and returns a new cache instance
+    * `WASession >> #createCache` has been renamed to `#createContinuationCache` and returns a new cache instance
+    * `WASession >> #cache` has been renamed to `#documentHandlers`
 
 # Bugs Fixed #
 
