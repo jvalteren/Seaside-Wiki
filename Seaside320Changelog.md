@@ -16,6 +16,7 @@
     * WAPopupAnchorTag >> #name
     * WAPopupAnchorTag >> #name:
   * The metacello configuration `ConfigurationOfSeaside3`'s default group now loads Core,Email,JSON,Javascript,JQuery and JQueryUI groups while it previously only loaded the Core group. This enhances discoverability for newcomers and existing users can still configure the load to only load the groups they need.
+  * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see #820.
 
 # Bugs Fixed #
 
