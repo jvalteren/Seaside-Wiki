@@ -22,6 +22,7 @@
     * `WASession >> #buildCache` has been renamed to `#createDocumentHandlerCache` and returns a new cache instance
     * `WASession >> #createCache` has been renamed to `#createContinuationCache` and returns a new cache instance
     * `WASession >> #cache` has been renamed to `#documentHandlers`
+    * `WARegistry >> #keyFor:` has been removed
 
 # Bugs Fixed #
 
