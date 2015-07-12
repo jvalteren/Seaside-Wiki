@@ -1,5 +1,5 @@
-- [x] merge #820
-- [ ] merge cache
+- [x] merge [#820](https://github.com/SeasideSt/Seaside/issues/820)
+- [ ] merge cache, [#262](https://github.com/SeasideSt/Seaside/issues/262)
 - ~~[ ] fix bug reported by Dale, [Grease/2](https://github.com/SeasideSt/Grease/issues/2)~~
 - [x] callback for expired session
 - [ ] WARegistry >> #initialize should read cache configuration from configuration
