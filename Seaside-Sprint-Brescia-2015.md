@@ -1,5 +1,4 @@
-- [ ] #820
+- [ ] merge #820
 - [ ] merge cache
-- [ ] merge url
-- [ ] fix bug reported by Dale
+- [ ] fix bug reported by Dale, [Grease/2](https://github.com/SeasideSt/Grease/issues/2)
 - [ ] callback for expired session
