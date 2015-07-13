@@ -23,6 +23,7 @@
     * `WASession >> #createCache` has been renamed to `#createContinuationCache` and returns a new cache instance
     * `WASession >> #cache` has been renamed to `#documentHandlers`
     * `WARegistry >> #keyFor:` has been removed
+    * the session cache is unidirectional and no longer bidirectional
 
 # Bugs Fixed #
 
