@@ -7,7 +7,7 @@ Making sure all objects are properly initialized can be complex, particularly wh
     * If a class _does not_ add new required parameters, it should override the designated initializer of its superclass. It might also choose to override another inherited initialization method but, in either case, it **must** call the overridden version with `super`.
     * If a class _does_ add required initialization parameters, it should define a new designated initializer (e.g. `#initializeWithFoo:bar:`). This method **must** call the designated initializer of its superclass with `self` (_not_ `super`). For example:
 
-```smalltalk
+```
 initializeWithFoo: aNumber bar: aString
 	self initialize.
 	foo := aNumber.
