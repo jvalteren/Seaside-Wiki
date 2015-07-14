@@ -15,7 +15,7 @@ Changelogs
  * [[3.0.2|Seaside302Changelog]]
 
 Development
- * [[CodingConventions]]
+ * [[Coding-Conventions]]
  * [[MakeRelease]]
  * [[ObjectInitialization]]
  * [[PackageNaming]]
