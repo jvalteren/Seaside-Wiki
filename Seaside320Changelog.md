@@ -1,5 +1,6 @@
 # Features #
   * In Pharo the web based class browser will use Nautilus if available (Pharo 2+).
+  * Ajax file uploads (jQuery serialization callback)
 
 # Breaking Changes #
   * the type of an input element is no longer in its class
