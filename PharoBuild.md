@@ -14,8 +14,10 @@ Pharo Build is a [Hudson](http://www.hudson-ci.org/) plugin to build [Pharo](htt
   * after code
 
 # Changelog #
+
 ## 0.4.1 ##
   * make the file watchdog a demon thread so that the vm can shut down
+
 ## 0.4.0 ##
   * removed exclamation marks in the default "After Code" template
   * write starup script in workspace folder and don't delete it after the build
