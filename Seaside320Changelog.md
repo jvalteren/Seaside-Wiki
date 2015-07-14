@@ -18,7 +18,7 @@
     * WAPopupAnchorTag >> #name
     * WAPopupAnchorTag >> #name:
   * The metacello configuration `ConfigurationOfSeaside3`'s default group now loads Core,Email,JSON,Javascript,JQuery and JQueryUI groups while it previously only loaded the Core group. This enhances discoverability for newcomers and existing users can still configure the load to only load the groups they need.
-  * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see #820.
+  * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see [#820](https://github.com/SeasideSt/Seaside/issues/820).
   * Dialects with namespaces (eg. VM) need to implement `GRPlatform >> #bindingOf:`, an example implementation can be found in the comments.
   * [#262](https://github.com/SeasideSt/Seaside/issues/262): Creating a new session is O(n)
     * `WASession >> #buildCache` has been renamed to `#createDocumentHandlerCache` and returns a new cache instance
@@ -45,6 +45,7 @@ The following bugs were fixed:
   * [#816](https://github.com/SeasideSt/Seaside/issues/816): 	WAHtmlAttributes >> #addClass: allocates too much
   * [#819](https://github.com/SeasideSt/Seaside/issues/819):	JQAjax does not have a json: callback
   * [#812](https://github.com/SeasideSt/Seaside/issues/812): 	Input elements should not generate a class by default
+  * [#820](https://github.com/SeasideSt/Seaside/issues/820): 	Configurations should not hold on to classes
   * [#822](https://github.com/SeasideSt/Seaside/issues/822): 	Drop clever CDATA trick
   * [#824](https://github.com/SeasideSt/Seaside/issues/824):   GRPackage>>#resolveWith: contains non-portable usage of String>>indexOfSubCollection:startingAt:
   * [#825](https://github.com/SeasideSt/Seaside/issues/825): 	Remove Methods deprecated in 3.1
