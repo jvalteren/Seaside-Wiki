@@ -20,60 +20,60 @@ Seaside 3.1 contains the following changes.
   * add `#dontDestroy` to `WARequestContext` to prevent object destruction during debugging
 
 # Bugs Fixed #
-  * [#111](https://github.com/SeasideSt/Seaside/issues/111)): 	jumpTo instance variable on WASession
+  * [#111](https://github.com/SeasideSt/Seaside/issues/111): 	jumpTo instance variable on WASession
   * [#244](https://github.com/SeasideSt/Seaside/issues/244)) : 	WABatchedList>>hasMultiplePages
-  * [#325](https://github.com/SeasideSt/Seaside/issues/325)):	Force the use of cookies
-  * [#364](https://github.com/SeasideSt/Seaside/issues/364)): 	add always redirect option to WARegistry
-  * [#453](https://github.com/SeasideSt/Seaside/issues/453)): 	document path consumer
-  * [#500](https://github.com/SeasideSt/Seaside/issues/500)): 	WADebugErrorHandler>>unableToResumeResponse provides invalid instructions
-  * [#591](https://github.com/SeasideSt/Seaside/issues/591)):	WAComboResponse - a combined buffered / streaming response
-  * [#592](https://github.com/SeasideSt/Seaside/issues/592)):	investigate tracking sessions by SSL session id
-  * [#626](https://github.com/SeasideSt/Seaside/issues/626)): 	Allow platforms to implement custom encoders for speed
-  * [#636](https://github.com/SeasideSt/Seaside/issues/636)): 	expected exception behavior WAWalkbackErrorHandler not portable (and not ANSI compliant)
-  * [#645](https://github.com/SeasideSt/Seaside/issues/645)): 	WAPopupAnchorTag overrides #name: of WAAnchorTag with different semantics
-  * [#663](https://github.com/SeasideSt/Seaside/issues/663)): 	Remove default nil option from WAListAttribute
-  * [#676](https://github.com/SeasideSt/Seaside/issues/676)): 	response generators have to reset the response before generating a new one
-  * [#679](https://github.com/SeasideSt/Seaside/issues/679)):   Make SessionContinuations into subclasses of RequestHandler
-  * [#680](https://github.com/SeasideSt/Seaside/issues/680)):   Add a pluggable action phase continuation
-  * [#681](https://github.com/SeasideSt/Seaside/issues/681)):   Get rid of WAMain and subclasses
-  * [#697](https://github.com/SeasideSt/Seaside/issues/697)):	Within a WAComponent I've repeated implemented #children to return a collection that contains a reference to self. Causing infinite recursion
-  * [#699](https://github.com/SeasideSt/Seaside/issues/699)): 	GRPharoPlatform>>#write:toFile:inFolder: uses CrLfFileStream in seaside 3.0.6.3
-  * [#707](https://github.com/SeasideSt/Seaside/issues/707)):	don't use #document:mimeType: when mime type is nil
-  * [#708](https://github.com/SeasideSt/Seaside/issues/708)):	JQDialog>>#buttons:
-  * [#709](https://github.com/SeasideSt/Seaside/issues/709)):	move document handlers to session
-  * [#712](https://github.com/SeasideSt/Seaside/issues/712)):	Pretty printing is broken for JavaScript expressions
-  * [#716](https://github.com/SeasideSt/Seaside/issues/716)):	WARequestHandler>>#preferenceAt: has no corresponding WARequestHandler>>#preferenceAt: ifAbsent:
-  * [#717](https://github.com/SeasideSt/Seaside/issues/717)): 	WAMemoryItem>>sizeOfObject
-  * [#718](https://github.com/SeasideSt/Seaside/issues/718)): 	Make profile tree more useful
-  * [#722](https://github.com/SeasideSt/Seaside/issues/722)): 	add support for the "multiple" attribute
-  * [#724](https://github.com/SeasideSt/Seaside/issues/724)):	add .pushState to ajaxifier
-  * [#726](https://github.com/SeasideSt/Seaside/issues/726)): 	Rework JSON and JavaScript escaping
-  * [#727](https://github.com/SeasideSt/Seaside/issues/727)): 	walkback only works for exceptions in callback phase
-  * [#728](https://github.com/SeasideSt/Seaside/issues/728)): 	add support for new HTTP status codes
-  * [#730](https://github.com/SeasideSt/Seaside/issues/730)): 	Float infinity and nan don't produce correct JSON representations
-  * [#731](https://github.com/SeasideSt/Seaside/issues/731)): 	utf-16 broken
-  * [#732](https://github.com/SeasideSt/Seaside/issues/732)): 	Add flushing render phase continuation
-  * [#733](https://github.com/SeasideSt/Seaside/issues/733)): 	multibyte characters broken when flushing a WAComboResponse
-  * [#735](https://github.com/SeasideSt/Seaside/issues/735)):	Problem with WAFileMetadataLibrary>>#deployFiles
-  * [#736](https://github.com/SeasideSt/Seaside/issues/736)): 	implement #basicNextPutAll: on pseudo streams
-  * [#737](https://github.com/SeasideSt/Seaside/issues/737)): 	Update WAScreenshot to work with Pharo 2.0
-  * [#738](https://github.com/SeasideSt/Seaside/issues/738)): 	Set encoding for Seaside-REST responses
-  * [#740](https://github.com/SeasideSt/Seaside/issues/740)):	Improper use of #replaceAll:with: (@ WAFileMetadataLibrary)
-  * [#741](https://github.com/SeasideSt/Seaside/issues/741)): 	#includesSubString: deprecated in Pharo 2.0
-  * [#742](https://github.com/SeasideSt/Seaside/issues/742)): 	Generated javascripts are not directly serialized on the canvas stream (leading to slow performance?)
-  * [#743](https://github.com/SeasideSt/Seaside/issues/743)): 	WAVNCController still uses Project which is gone from Pharo-1.4
-  * [#747](https://github.com/SeasideSt/Seaside/issues/747)): 	Fix HTML 5 support
-  * [#749](https://github.com/SeasideSt/Seaside/issues/749)): 	Wrong handling of urls encoded in UTF8
-  * [#751](https://github.com/SeasideSt/Seaside/issues/751)):	WAAccept>>fromString: assumes the only parameter to a media-range is 'q'
-  * [#754](https://github.com/SeasideSt/Seaside/issues/754)):	#asJson produces strings with non-valid escape sequences "\0", "\a" and "\x.."
-  * [#755](https://github.com/SeasideSt/Seaside/issues/755)):	JSJsonParser removes whitespace at the start of string literals
-  * [#756](https://github.com/SeasideSt/Seaside/issues/756)): 	WACanvasBrushTest>>testCanvasWithLineBreaksGemStoneIssue289 uses non-portable selectors
-  * [#759](https://github.com/SeasideSt/Seaside/issues/759)): 	application/json recognized as a binary mime type
-  * [#760](https://github.com/SeasideSt/Seaside/issues/760)): 	addAllFilesIn: is broken in Pharo 20
-  * [#762](https://github.com/SeasideSt/Seaside/issues/762)): 	WAUrl decodePercent: 'abc%' fails
-  * [#769](https://github.com/SeasideSt/Seaside/issues/769)): 	more Slime rule for collections
-  * [#770](https://github.com/SeasideSt/Seaside/issues/770)): 	ScaledDecimal rendering support
-  * [#772](https://github.com/SeasideSt/Seaside/issues/772)): 	WAResponse >>#doNotCache doesn't send full Cache-Control header
+  * [#325](https://github.com/SeasideSt/Seaside/issues/325):	Force the use of cookies
+  * [#364](https://github.com/SeasideSt/Seaside/issues/364): 	add always redirect option to WARegistry
+  * [#453](https://github.com/SeasideSt/Seaside/issues/453): 	document path consumer
+  * [#500](https://github.com/SeasideSt/Seaside/issues/500): 	WADebugErrorHandler>>unableToResumeResponse provides invalid instructions
+  * [#591](https://github.com/SeasideSt/Seaside/issues/591):	WAComboResponse - a combined buffered / streaming response
+  * [#592](https://github.com/SeasideSt/Seaside/issues/592):	investigate tracking sessions by SSL session id
+  * [#626](https://github.com/SeasideSt/Seaside/issues/626): 	Allow platforms to implement custom encoders for speed
+  * [#636](https://github.com/SeasideSt/Seaside/issues/636): 	expected exception behavior WAWalkbackErrorHandler not portable (and not ANSI compliant)
+  * [#645](https://github.com/SeasideSt/Seaside/issues/645): 	WAPopupAnchorTag overrides #name: of WAAnchorTag with different semantics
+  * [#663](https://github.com/SeasideSt/Seaside/issues/663): 	Remove default nil option from WAListAttribute
+  * [#676](https://github.com/SeasideSt/Seaside/issues/676): 	response generators have to reset the response before generating a new one
+  * [#679](https://github.com/SeasideSt/Seaside/issues/679):   Make SessionContinuations into subclasses of RequestHandler
+  * [#680](https://github.com/SeasideSt/Seaside/issues/680):   Add a pluggable action phase continuation
+  * [#681](https://github.com/SeasideSt/Seaside/issues/681):   Get rid of WAMain and subclasses
+  * [#697](https://github.com/SeasideSt/Seaside/issues/697):	Within a WAComponent I've repeated implemented #children to return a collection that contains a reference to self. Causing infinite recursion
+  * [#699](https://github.com/SeasideSt/Seaside/issues/699): 	GRPharoPlatform>>#write:toFile:inFolder: uses CrLfFileStream in seaside 3.0.6.3
+  * [#707](https://github.com/SeasideSt/Seaside/issues/707):	don't use #document:mimeType: when mime type is nil
+  * [#708](https://github.com/SeasideSt/Seaside/issues/708):	JQDialog>>#buttons:
+  * [#709](https://github.com/SeasideSt/Seaside/issues/709):	move document handlers to session
+  * [#712](https://github.com/SeasideSt/Seaside/issues/712):	Pretty printing is broken for JavaScript expressions
+  * [#716](https://github.com/SeasideSt/Seaside/issues/716):	WARequestHandler>>#preferenceAt: has no corresponding WARequestHandler>>#preferenceAt: ifAbsent:
+  * [#717](https://github.com/SeasideSt/Seaside/issues/717): 	WAMemoryItem>>sizeOfObject
+  * [#718](https://github.com/SeasideSt/Seaside/issues/718): 	Make profile tree more useful
+  * [#722](https://github.com/SeasideSt/Seaside/issues/722): 	add support for the "multiple" attribute
+  * [#724](https://github.com/SeasideSt/Seaside/issues/724):	add .pushState to ajaxifier
+  * [#726](https://github.com/SeasideSt/Seaside/issues/726): 	Rework JSON and JavaScript escaping
+  * [#727](https://github.com/SeasideSt/Seaside/issues/727): 	walkback only works for exceptions in callback phase
+  * [#728](https://github.com/SeasideSt/Seaside/issues/728): 	add support for new HTTP status codes
+  * [#730](https://github.com/SeasideSt/Seaside/issues/730): 	Float infinity and nan don't produce correct JSON representations
+  * [#731](https://github.com/SeasideSt/Seaside/issues/731): 	utf-16 broken
+  * [#732](https://github.com/SeasideSt/Seaside/issues/732): 	Add flushing render phase continuation
+  * [#733](https://github.com/SeasideSt/Seaside/issues/733): 	multibyte characters broken when flushing a WAComboResponse
+  * [#735](https://github.com/SeasideSt/Seaside/issues/735):	Problem with WAFileMetadataLibrary>>#deployFiles
+  * [#736](https://github.com/SeasideSt/Seaside/issues/736): 	implement #basicNextPutAll: on pseudo streams
+  * [#737](https://github.com/SeasideSt/Seaside/issues/737): 	Update WAScreenshot to work with Pharo 2.0
+  * [#738](https://github.com/SeasideSt/Seaside/issues/738): 	Set encoding for Seaside-REST responses
+  * [#740](https://github.com/SeasideSt/Seaside/issues/740):	Improper use of #replaceAll:with: (@ WAFileMetadataLibrary)
+  * [#741](https://github.com/SeasideSt/Seaside/issues/741): 	#includesSubString: deprecated in Pharo 2.0
+  * [#742](https://github.com/SeasideSt/Seaside/issues/742): 	Generated javascripts are not directly serialized on the canvas stream (leading to slow performance?)
+  * [#743](https://github.com/SeasideSt/Seaside/issues/743): 	WAVNCController still uses Project which is gone from Pharo-1.4
+  * [#747](https://github.com/SeasideSt/Seaside/issues/747): 	Fix HTML 5 support
+  * [#749](https://github.com/SeasideSt/Seaside/issues/749): 	Wrong handling of urls encoded in UTF8
+  * [#751](https://github.com/SeasideSt/Seaside/issues/751):	WAAccept>>fromString: assumes the only parameter to a media-range is 'q'
+  * [#754](https://github.com/SeasideSt/Seaside/issues/754):	#asJson produces strings with non-valid escape sequences "\0", "\a" and "\x.."
+  * [#755](https://github.com/SeasideSt/Seaside/issues/755):	JSJsonParser removes whitespace at the start of string literals
+  * [#756](https://github.com/SeasideSt/Seaside/issues/756): 	WACanvasBrushTest>>testCanvasWithLineBreaksGemStoneIssue289 uses non-portable selectors
+  * [#759](https://github.com/SeasideSt/Seaside/issues/759): 	application/json recognized as a binary mime type
+  * [#760](https://github.com/SeasideSt/Seaside/issues/760): 	addAllFilesIn: is broken in Pharo 20
+  * [#762](https://github.com/SeasideSt/Seaside/issues/762): 	WAUrl decodePercent: 'abc%' fails
+  * [#769](https://github.com/SeasideSt/Seaside/issues/769): 	more Slime rule for collections
+  * [#770](https://github.com/SeasideSt/Seaside/issues/770): 	ScaledDecimal rendering support
+  * [#772](https://github.com/SeasideSt/Seaside/issues/772): 	WAResponse >>#doNotCache doesn't send full Cache-Control header
 
 # Changes #
 ## Users ##

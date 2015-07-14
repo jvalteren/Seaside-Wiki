@@ -38,6 +38,6 @@
   * reduce the number of false positives in the string concatenation rule
   * make Seaside-REST and WAApplication BFF
   * [#716](https://github.com/SeasideSt/Seaside/issues/716)) in seaside: WARequestHandler>>#preferenceAt: has no corresponding WARequestHandler>>#preferenceAt: ifAbsent:
-  * [#735](https://github.com/SeasideSt/Seaside/issues/735)):	Problem with WAFileMetadataLibrary>>#deployFiles
-  * [#724](https://github.com/SeasideSt/Seaside/issues/724)):	add .pushState to ajaxifier
-  * [#697](https://github.com/SeasideSt/Seaside/issues/697)):    Within a WAComponent I've repeated implemented #children to return a collection that contains a reference to self. Causing infinite recursion
+  * [#735](https://github.com/SeasideSt/Seaside/issues/735):	Problem with WAFileMetadataLibrary>>#deployFiles
+  * [#724](https://github.com/SeasideSt/Seaside/issues/724):	add .pushState to ajaxifier
+  * [#697](https://github.com/SeasideSt/Seaside/issues/697):    Within a WAComponent I've repeated implemented #children to return a collection that contains a reference to self. Causing infinite recursion
