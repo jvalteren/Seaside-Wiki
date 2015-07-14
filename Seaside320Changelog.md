@@ -9,6 +9,10 @@
   * In Pharo the web based class browser will use Nautilus if available (Pharo 2+).
   * Ajax file uploads (jQuery serialization callback)
 
+## GemStone/S related improvements
+  * configurations hold on to bindings instead of classes
+  * WAMutex owner is now a transient value
+
 # Breaking Changes #
   * the type of an input element is no longer in its class
     * you have to change the CSS selector of the input type eg `.checkbox` to `[type='checkbox']`
