@@ -18,7 +18,7 @@
 
 # Tasks #
 _(hover over the issues to get a short description)_
-  * [Issue 552](https://code.google.com/p/seaside/issues/detail?id=552)
+  * [#552](https://github.com/SeasideSt/Seaside/issues/552))
   * ~~Functional tests~~
   * ~~Load order tests~~
   * Class comment check

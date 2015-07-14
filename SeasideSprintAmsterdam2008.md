@@ -29,32 +29,32 @@
 
 ## Easier ##
 
-  * [Issue 1](https://code.google.com/p/seaside/issues/detail?id=1) - John; solution proposed
-  * [Issue 5](https://code.google.com/p/seaside/issues/detail?id=5) - Michael
-  * [Issue 40](https://code.google.com/p/seaside/issues/detail?id=40) - Lukas
-  * [Issue 3](https://code.google.com/p/seaside/issues/detail?id=3) - investigate... still valid?
-  * [Issue 13](https://code.google.com/p/seaside/issues/detail?id=13) - Lukas check if it should be closed?
-  * [Issue 44](https://code.google.com/p/seaside/issues/detail?id=44) - Toon
-  * [Issue 58](https://code.google.com/p/seaside/issues/detail?id=58) - Julian
-  * [Issue 59](https://code.google.com/p/seaside/issues/detail?id=59) - Julian
-  * [Issue 64](https://code.google.com/p/seaside/issues/detail?id=64) - Yann Stephan
-  * [Issue 66](https://code.google.com/p/seaside/issues/detail?id=66) - Sebastian
-  * [Issue 69](https://code.google.com/p/seaside/issues/detail?id=69) - investigate... still valid?  John says yes (but for a different reason) -- see updated issue
-  * [Issue 74](https://code.google.com/p/seaside/issues/detail?id=74) - Yann - Adrian - watch for compatibility. write tests!
-  * [Issue 86](https://code.google.com/p/seaside/issues/detail?id=86) - Michael
-  * [Issue 87](https://code.google.com/p/seaside/issues/detail?id=87) (VisualWorks)
-  * [Issue 90](https://code.google.com/p/seaside/issues/detail?id=90)
-  * [Issue 114](https://code.google.com/p/seaside/issues/detail?id=114) - Michael
-  * [Issue 118](https://code.google.com/p/seaside/issues/detail?id=118) - Philippe
+  * [#1](https://github.com/SeasideSt/Seaside/issues/1)) - John; solution proposed
+  * [#5](https://github.com/SeasideSt/Seaside/issues/5)) - Michael
+  * [#40](https://github.com/SeasideSt/Seaside/issues/40)) - Lukas
+  * [#3](https://github.com/SeasideSt/Seaside/issues/3)) - investigate... still valid?
+  * [#13](https://github.com/SeasideSt/Seaside/issues/13)) - Lukas check if it should be closed?
+  * [#44](https://github.com/SeasideSt/Seaside/issues/44)) - Toon
+  * [#58](https://github.com/SeasideSt/Seaside/issues/58)) - Julian
+  * [#59](https://github.com/SeasideSt/Seaside/issues/59)) - Julian
+  * [#64](https://github.com/SeasideSt/Seaside/issues/64)) - Yann Stephan
+  * [#66](https://github.com/SeasideSt/Seaside/issues/66)) - Sebastian
+  * [#69](https://github.com/SeasideSt/Seaside/issues/69)) - investigate... still valid?  John says yes (but for a different reason) -- see updated issue
+  * [#74](https://github.com/SeasideSt/Seaside/issues/74)) - Yann - Adrian - watch for compatibility. write tests!
+  * [#86](https://github.com/SeasideSt/Seaside/issues/86)) - Michael
+  * [#87](https://github.com/SeasideSt/Seaside/issues/87)) (VisualWorks)
+  * [#90](https://github.com/SeasideSt/Seaside/issues/90))
+  * [#114](https://github.com/SeasideSt/Seaside/issues/114)) - Michael
+  * [#118](https://github.com/SeasideSt/Seaside/issues/118)) - Philippe
 
 ## Harder ##
-  * [Issue 16](https://code.google.com/p/seaside/issues/detail?id=16) - Lukas
-  * [Issue 19](https://code.google.com/p/seaside/issues/detail?id=19) - I'll take a look at this one (Dale)
-  * [Issue 115](https://code.google.com/p/seaside/issues/detail?id=115) - Lukas
-  * [Issue 121](https://code.google.com/p/seaside/issues/detail?id=121) - Lukas
-  * [Issue 103](https://code.google.com/p/seaside/issues/detail?id=103)
+  * [#16](https://github.com/SeasideSt/Seaside/issues/16)) - Lukas
+  * [#19](https://github.com/SeasideSt/Seaside/issues/19)) - I'll take a look at this one (Dale)
+  * [#115](https://github.com/SeasideSt/Seaside/issues/115)) - Lukas
+  * [#121](https://github.com/SeasideSt/Seaside/issues/121)) - Lukas
+  * [#103](https://github.com/SeasideSt/Seaside/issues/103))
 
 ## Discuss ##
-  * [Issue 28](https://code.google.com/p/seaside/issues/detail?id=28)
-  * [Issue 112](https://code.google.com/p/seaside/issues/detail?id=112) - Julian
-  * [Issue 117](https://code.google.com/p/seaside/issues/detail?id=117) - Niall and John have updated with details of VW problem, Lukas
+  * [#28](https://github.com/SeasideSt/Seaside/issues/28))
+  * [#112](https://github.com/SeasideSt/Seaside/issues/112)) - Julian
+  * [#117](https://github.com/SeasideSt/Seaside/issues/117)) - Niall and John have updated with details of VW problem, Lukas

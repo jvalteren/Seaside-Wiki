@@ -5,12 +5,12 @@ Seaside 3.0.2 is a bug fix release for Seaside 3.0. There never was an official 
 # Details #
 
 The following bugs were fixed:
-  * [Issue 606](https://code.google.com/p/seaside/issues/detail?id=606) WAKomEncoded fails serving CSS files from WAExternalFileLibrary
-  * [Issue 41](https://code.google.com/p/seaside/issues/detail?id=41) Provide simple email abstraction
-  * [Issue 602](https://code.google.com/p/seaside/issues/detail?id=602) Seaside's scriptaculous in place editor is bugged
-  * [Issue 600](https://code.google.com/p/seaside/issues/detail?id=600) BlockClosure>>processHttp sends deprecated #fixTemps
-  * [Issue 610](https://code.google.com/p/seaside/issues/detail?id=610) Welcome should display a warning if author initials are not set
-  * [Issue 612](https://code.google.com/p/seaside/issues/detail?id=612) subscript out of bounds when encoding a single 0 character to UTF-8
+  * [#606](https://github.com/SeasideSt/Seaside/issues/606)) WAKomEncoded fails serving CSS files from WAExternalFileLibrary
+  * [#41](https://github.com/SeasideSt/Seaside/issues/41)) Provide simple email abstraction
+  * [#602](https://github.com/SeasideSt/Seaside/issues/602)) Seaside's scriptaculous in place editor is bugged
+  * [#600](https://github.com/SeasideSt/Seaside/issues/600)) BlockClosure>>processHttp sends deprecated #fixTemps
+  * [#610](https://github.com/SeasideSt/Seaside/issues/610)) Welcome should display a warning if author initials are not set
+  * [#612](https://github.com/SeasideSt/Seaside/issues/612)) subscript out of bounds when encoding a single 0 character to UTF-8
 
 In addition the following improvements were made:
   * added the possibility for new items to CTReport

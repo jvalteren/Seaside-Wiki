@@ -5,6 +5,6 @@ That's a list of what I consider the biggest and hardest to fix regression issue
 
 # Details #
 
-  * [Issue 553](https://code.google.com/p/seaside/issues/detail?id=553): #isolate: broken
-  * ~~[Issue 636](https://code.google.com/p/seaside/issues/detail?id=636): expected exception behavior WAWalkbackErrorHandler not portable (and not ANSI compliant)~~
-  * ~~[Issue 727](https://code.google.com/p/seaside/issues/detail?id=727): 	walkback only works for exceptions in callback phase~~
+  * [#553](https://github.com/SeasideSt/Seaside/issues/553)): #isolate: broken
+  * ~~[#636](https://github.com/SeasideSt/Seaside/issues/636)): expected exception behavior WAWalkbackErrorHandler not portable (and not ANSI compliant)~~
+  * ~~[#727](https://github.com/SeasideSt/Seaside/issues/727)): 	walkback only works for exceptions in callback phase~~

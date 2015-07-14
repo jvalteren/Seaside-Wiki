@@ -18,11 +18,11 @@
   * ports
     * general work, issues
     * convince people about secure PRNG
-  * [Issue 790](https://code.google.com/p/seaside/issues/detail?id=790)
-  * [Issue 801](https://code.google.com/p/seaside/issues/detail?id=801) ask for feedback
+  * [#790](https://github.com/SeasideSt/Seaside/issues/790))
+  * [#801](https://github.com/SeasideSt/Seaside/issues/801)) ask for feedback
   * tODE for Pharo
     * StON editor
-    * [Issue 768](https://code.google.com/p/seaside/issues/detail?id=768)
+    * [#768](https://github.com/SeasideSt/Seaside/issues/768))
   * AJP
     * composite buffers (for request bodies)
     * read request body from buffer

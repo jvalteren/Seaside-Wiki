@@ -16,14 +16,14 @@ Details: ![http://seaside.googlecode.com/files/seaside-dependencies-reduced-note
   * Seaside-Session
     * Seaside-Tests-Session
   * Seaside-Component
-    * Seaside-Tests-Component (for defects see [Issue 318](https://code.google.com/p/seaside/issues/detail?id=318))
+    * Seaside-Tests-Component (for defects see [#318](https://github.com/SeasideSt/Seaside/issues/318)))
   * Seaside-RenderLoop
     * Seaside-Tests-RenderLoop (this is an essentially empty package with no tests)
   * Seaside-Tools-Core
   * Seaside-Widgets
   * Seaside-Environment
     * Seaside-Pharo-Environment
-    * Seaside-Tests-Environment (for defects see [Issue 319](https://code.google.com/p/seaside/issues/detail?id=319))
+    * Seaside-Tests-Environment (for defects see [#319](https://github.com/SeasideSt/Seaside/issues/319)))
 
 # Traditional #
   * (functional tests)
@@ -33,7 +33,7 @@ Details: ![http://seaside.googlecode.com/files/seaside-dependencies-reduced-note
     * Seaside-Tests-Pharo-Continuation
   * Seaside-Flow
   * Seaside-Pharo-Flow
-    * Seaside-Tests-Flow (for defects see [Issue 309](https://code.google.com/p/seaside/issues/detail?id=309))
+    * Seaside-Tests-Flow (for defects see [#309](https://github.com/SeasideSt/Seaside/issues/309)))
   * Seaside-Tools-Web
   * Seaside-Pharo-Tools-Web
     * Seaside-Tests-Tools-Web

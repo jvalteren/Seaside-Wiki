@@ -19,8 +19,8 @@
   * move Seaside-JSON to 3.1 from addons  ✓
   * update seaside-31 builder script to include Seaside-JSON-Core  ✓
   * move Seaside-REST to 3.1 from addons
-  * merge streaming patch, [Issue 591](https://code.google.com/p/seaside/issues/detail?id=591)   ✓
-  * [Issue 707](https://code.google.com/p/seaside/issues/detail?id=707)   ✓
+  * merge streaming patch, [#591](https://github.com/SeasideSt/Seaside/issues/591))   ✓
+  * [#707](https://github.com/SeasideSt/Seaside/issues/707))   ✓
   * fix failing tests   ✓
     * Seaside.Tests.Session.WASessionTest.testAddFilter 	0 ms	1
     * Seaside.Tests.Session.WASessionTest.testAddFilterFirst 	0 ms	1
