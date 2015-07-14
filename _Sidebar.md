@@ -1,5 +1,5 @@
 Changelogs
- * [[Past Releases|PastReleases]]
+ * [[Past Releases|Past-Releases]]
  * [[3.1.3|Seaside313Changelog]]
  * [[3.1.2|Seaside312Changelog]]
  * [[3.1.1|Seaside311Changelog]]
