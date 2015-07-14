@@ -2,7 +2,6 @@
   * In Pharo the web based class browser will use Nautilus if available (Pharo 2+).
   * Ajax file uploads (jQuery serialization callback)
   * TBD: Seaside-Security package
-  * TBD: Cache changes
 
 # Breaking Changes #
   * the type of an input element is no longer in its class
@@ -27,6 +26,7 @@
     * `WASession >> #cache` has been renamed to `#documentHandlers`
     * `WARegistry >> #keyFor:` has been removed
     * the session cache is unidirectional and no longer bidirectional
+    * `Dictionary >> #valuesCollect:` has been removed
 
 # Bugs Fixed #
 
