@@ -15,10 +15,10 @@ Changelogs
  * [[3.0.2|Seaside302Changelog]]
 
 Development
- * [[Coding-Conventions]]
- * [[MakeRelease]]
- * [[ObjectInitialization]]
- * [[PackageNaming]]
+ * [[Coding Conventions|Coding-Conventions]]
+ * [[Make Release|Make-Release]]
+ * [[Object Initialization|Object-Initialization]]
+ * [[Package Naming|Package-Naming]]
 
 Documentation
  * [[SecurityFeatures]]
