@@ -1,7 +1,11 @@
 # Features #
+  * new session cache with better performance and scalability
+    * Supports both idle and absolute timeouts as recommended by [OWASP Session Management Cheat Sheet](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration)
+    * access by key is fast (O(1) average case O(n) worst case)
+    * reaping expired sessions is proportional (O(n)) to the number of expired session and independent of the total number of sessions (O(1))
+    * creating a new session independent of the total number of sessions
   * In Pharo the web based class browser will use Nautilus if available (Pharo 2+).
   * Ajax file uploads (jQuery serialization callback)
-  * TBD: Seaside-Security package
 
 # Breaking Changes #
   * the type of an input element is no longer in its class
