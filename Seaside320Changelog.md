@@ -5,6 +5,7 @@
     * reaping expired sessions is proportional (O(n)) to the number of expired session and independent of the total number of sessions (O(1))
     * creating a new session independent of the total number of sessions
     * custom implementation for GemStone/S based on `RcKeyValueDictionary`
+  * WAUrl parsing and serialization is context dependent
   * In Pharo the web based class browser will use Nautilus if available (Pharo 2+).
   * Ajax file uploads (jQuery serialization callback)
 
@@ -56,5 +57,5 @@ The following bugs were fixed:
   * [#825](https://github.com/SeasideSt/Seaside/issues/825): 	Remove Methods deprecated in 3.1
   * [#827](https://github.com/SeasideSt/Seaside/issues/827): 	GRPlatform >> #deprecationExceptionSet should use ExceptionSet
   * [#828](https://github.com/SeasideSt/Seaside/issues/828): 	replace TimeStamp with DateAndTime
-  * [#830](https://github.com/SeasideSt/Seaside/issues/830):    	[ENH](ENH) Javascript Condition with else decoration (JSConditionElse)
+  * [#830](https://github.com/SeasideSt/Seaside/issues/830):    	(ENH) Javascript Condition with else decoration (JSConditionElse)
   * [#833](https://github.com/SeasideSt/Seaside/issues/833):	WARequest>>destroy doesn't set the body' to nil
