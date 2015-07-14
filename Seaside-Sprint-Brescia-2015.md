@@ -2,9 +2,9 @@
 - [x] merge cache, [#262](https://github.com/SeasideSt/Seaside/issues/262)
 - ~~[ ] fix bug reported by Dale, [Grease/2](https://github.com/SeasideSt/Grease/issues/2)~~
 - [x] callback for expired session
-- [ ] [#518](https://github.com/SeasideSt/Seaside/issues/518) Potential (minor?) problem in WACache
-- [ ] configuration and attribute editor should be read from cache
+- [X] [#518](https://github.com/SeasideSt/Seaside/issues/518) Potential (minor?) problem in WACache
+- [X] configuration and attribute editor should be read from cache
 - [x] WARegistry >> #initialize should read cache configuration from configuration
 - [x] make session cache unidirectional
-- [ ] make registry dictionary unidirectional
-- [ ] make dispatcher dictionary unidirectional
+- ~~[ ] make registry dictionary unidirectional~~
+- ~~[ ] make dispatcher dictionary unidirectional~~
