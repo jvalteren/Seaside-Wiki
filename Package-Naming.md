@@ -2,7 +2,7 @@
 
 Below a rough [EBNF grammar](http://en.wikipedia.org/wiki/Extended_Backus–Naur_Form) of how Seaside and Monticello expect packages and versions to be named (no spaces allowed anywhere):
 
-```
+```smalltalk
 Package     = PackageName VersionInfo
 PackageName = Name "-" [ Purpose "-" ] [ Platform "-" ] Rest
 VersionInfo = { "." Branch } "-" Author "." Version

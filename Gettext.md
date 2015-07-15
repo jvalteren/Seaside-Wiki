@@ -15,25 +15,25 @@ Previously that was:
 
 # API #
 The easiest way to translate a string is using the `#translate:` message on the render canvas.
-```
+```smalltalk
 html translate: 'text to translate'
 ```
 This will use content negotiation to find the first language that's supported by both your system and the user. If you want the set the user language to a specific one send `#locale:` to the current session. If you want to translate to a specific language use
-```
+```smalltalk
 html translate: 'other text to translate' to: aWALocale
 ```
 
 This doesn't work for attributes. In these cases you want to use `#seasideTranslated` on `String`
-```
+```smalltalk
 html image url: aWAUrl; altText: 'sunrise at the beach' seasideTranslated
 ```
 or
-```
+```smalltalk
 html image url: aWAUrl; altText: ('sunrise at the beach' seasideTranslatedTo: aWALocale)
 ```
 
 There are some cases when neither of these approaches work. Mainly when the method that contains the literal is executed outside of a Seaside request. In these cases you can use `#seasideLazyTranslated`
-```
+```smalltalk
 descriptionFirstName
 	^ MAStringDescription new
 		accessor: #firstName;

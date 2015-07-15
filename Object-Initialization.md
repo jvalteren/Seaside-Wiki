@@ -7,7 +7,7 @@ Making sure all objects are properly initialized can be complex, particularly wh
     * If a class _does not_ add new required parameters, it should override the designated initializer of its superclass. It might also choose to override another inherited initialization method but, in either case, it **must** call the overridden version with `super`.
     * If a class _does_ add required initialization parameters, it should define a new designated initializer (e.g. `#initializeWithFoo:bar:`). This method **must** call the designated initializer of its superclass with `self` (_not_ `super`). For example:
 
-```
+```smalltalk
 initializeWithFoo: aNumber bar: aString
 	self initialize.
 	foo := aNumber.
@@ -18,7 +18,7 @@ initializeWithFoo: aNumber bar: aString
 
   * Each class **should** have one primary instance creation method ("designated constructor") that uses `#basicNew` and then the designated initializer. You **must not** use `#new` instead of `#basicNew` as this would result in the designated constructor of the superclass being called twice. For example:
 
-```
+```smalltalk
 foo: aNumber bar: aString
 	^ self basicNew
 		initializeWithFoo: aNumber bar: aString;
@@ -37,7 +37,7 @@ foo: aNumber bar: aString
 
 # Example #
 
-```
+```smalltalk
 GRObject>>initialize
 	"default designated initializer"
 
@@ -100,7 +100,7 @@ WABox class>>width: wInteger height: hInteger
 
 Note that we do not need to provide an implementation of `#new` but calling any of `#new`, `#width:height:`, or `#width:height:depth:` on `WABox` will result in the designated initializers of all three classes being called.
 
-```
+```smalltalk
 WABox subclass: #WAColoredBox
 	instanceVariableNames: 'color'
 	classVariableNames: ''

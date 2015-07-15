@@ -10,30 +10,30 @@ You start by sublassing either `WARestfulHandler` or `WARestfulFilter` and putti
 
 ## HTTP Method ##
 Every method must have a pragma that indicates the HTTP method on which it should be invoked.
-```
+```smalltalk
 simpleGet
    <get>
 ```
-```
+```smalltalk
 simplePost
    <post>
 ```
 
 ## Request URL path ##
 You can mark method to be executed only on a certain request path and bind it to method arguments.
-```
+```smalltalk
 getEmptyPath
     "will be executed if the request path is empty"
     <get>
 ```
-```
+```smalltalk
 getFirstPathElement: pathElement
     "Will be executed if the request path is one element long, the path element will be bound
     to the first method argument.
     Eg. if the request is for '/index.html' the value of pathElement will be 'index.html'"
     <get>
 ```
-```
+```smalltalk
 getFirstPathElement: firstPathElement secondPathElement: secondPathElement
     "Will be executed if the request path is two elements long, the first path element will be bound
     to the first method argument, the second path element will be bound to the second method argument.
@@ -42,7 +42,7 @@ getFirstPathElement: firstPathElement secondPathElement: secondPathElement
     <get>
 ```
 You can use the `Path:` pragma to get more control over when the method should be invoked.
-```
+```smalltalk
 getFrontPage: applicationName
     "Will be executed if the request path is two elements long and the second element is equal to 'index.html'.
     The first path element will be bound to the first method argument, the second path element will be discarded.
@@ -51,7 +51,7 @@ getFrontPage: applicationName
     <path: '/{applicationName}/index.html'>
 ```
 In case case the name of the placeholder (`applicationName`) must match the method argument name. The same can be achieved with:
-```
+```smalltalk
 getFrontPage: applicationName
     "Will be executed if the request path is two elements long and the second element is equal to 'index.html'.
     The first path element will be bound to the first method argument, the second path element will be discarded.
@@ -60,7 +60,7 @@ getFrontPage: applicationName
     <path: '/{1}/index.html'>
 ```
 In case case the index of the placeholder (1) must match the index of the method argument. You can use this to reorder arguments.
-```
+```smalltalk
 getPage: pageName for: applicationName
     "Will be executed if the request path is two elements long.
     The first path element will be bound to the second method argument, the second path element will be
@@ -70,7 +70,7 @@ getPage: pageName for: applicationName
     <path: '/{2}/{1}'>
 ```
 This can also be done with named place holder:
-```
+```smalltalk
 getPage: pageName for: applicationName
     "Will be executed if the request path is two elements long.
     The first path element will be bound to the second method argument, the second path element will be
@@ -80,7 +80,7 @@ getPage: pageName for: applicationName
     <path: '/{applicationName}/{pageName}'>
 ```
 Also partial matches are supported for example
-```
+```smalltalk
 getHtmlPageName: pageName
     "Will be executed if the request path is one element long and ends with '.html'.
     The first path element will be bound to the path element minus '.html'.
@@ -89,7 +89,7 @@ getHtmlPageName: pageName
     <path: '/{pageName}.html'>
 ```
 or
-```
+```smalltalk
 getIndexPage: extension
     "Will be executed if the request path is one element long and starts with 'index.'.
     The first path element will be bound to the path element minus 'index.'.
@@ -98,14 +98,14 @@ getIndexPage: extension
     <path: '/index.{extension}'>
 ```
 You can match different path elements with an or expression
-```
+```smalltalk
 getMethodsOrClasses
     "Will be executed if the request path is one element long and either 'methods.mcz' or 'classes.mcs'."
     <get>
     <path: '/[methods.mcz|classes.mcs]'>
 ```
 Finally you can match an arbitrary number (zero or more) of path elements
-```
+```smalltalk
 getFile: path
     "Will be executed if the request path zero or more.
     Eg. if the request is for '/a/b/c' the value of pageName will be #('a' 'b' 'c')."
@@ -113,7 +113,7 @@ getFile: path
     <path: '/*path*'>
 ```
 You can combine this with other patterns
-```
+```smalltalk
 getFile: fileName at: pathTerms fromProject: projectName
     <get>
     <path: '/projects/{projectName}/*pathTerms*/{fileName}.mcz/[classes|methods]'>
@@ -121,7 +121,7 @@ getFile: fileName at: pathTerms fromProject: projectName
 
 ## Query Arguments ##
 You can also
-```
+```smalltalk
 searchFor: query
     "Will be executed if the request path is 'search' and there is a query parameter named 'q'.
     The value of the query parameter will be the value of the method argument.
@@ -133,19 +133,19 @@ Note that this can be combined with the patch matching techniques outlined above
 
 ## Conent-Type ##
 You can mark methods as to be invoked only on certain content types. This only makes sense for HTTP methods that have a request body like POST and PUT.
-```
+```smalltalk
 urlEncodedPost
     <post>
     <consumes: 'application/x-www-form-urlencoded'>
 ```
 Note that wildcards are supported
-```
+```smalltalk
 postXml
     <post>
     <consumes: '*/xml'>
 ```
 or
-```
+```smalltalk
 postImage
     <post>
     <consumes: 'image/*'>
@@ -153,19 +153,19 @@ postImage
 
 ## Accept ##
 You can mark methods as to be invoked when the client accepts the response content type.
-```
+```smalltalk
 getPng
     <get>
     <produces: 'image/png'>
 ```
 Note that wildcards are supported
-```
+```smalltalk
 getXml
     <post>
     <produces: '*/xml'>
 ```
 or
-```
+```smalltalk
 getImage
     <post>
     <produces: 'image/*'>
@@ -182,12 +182,12 @@ Sometimes there are several methods which Seaside-REST could choose for a reques
 
 ## Registration ##
 If you have a subclass of `WAPragmaBasedRestfulHandler` you can register it as:
-```
+```smalltalk
 WAAdmin register: MyRestHandler at: 'myapp'.
 ```
 
 When you have a subclass of `WAPragmaBasedRestfulFilter` that you want to add to your application you can add it with:
-```
+```smalltalk
 | application |
 application := WAAdmin register: MyRootComponent asApplicationAt: 'myapp'.
 application addFilterFirst: MyRestFilter new.
