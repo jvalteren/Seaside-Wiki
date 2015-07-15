@@ -1,5 +1,3 @@
-# Seaside add-on libraries #
-
 Some useful add-on libraries:
   * [JQWidgetBox](http://www.squeaksource.com/JQueryWidgetBox/) JQuery Widgets with Seaside integration
   * [Seaside-REST](SeasideRest) RESTful applications with Seaside; included with Seaside 3.1.
