@@ -7,6 +7,6 @@
 - [x] WARegistry >> #initialize should read cache configuration from configuration
 - [x] make session cache unidirectional
 - [ ] https://github.com/SeasideSt/Seaside/issues/842
-- [ ] https://github.com/SeasideSt/Seaside/issues/843
+- [x] https://github.com/SeasideSt/Seaside/issues/843
 - ~~[ ] make registry dictionary unidirectional~~
 - ~~[ ] make dispatcher dictionary unidirectional~~
