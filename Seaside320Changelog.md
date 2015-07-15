@@ -50,10 +50,10 @@
   * `WADivTag` has been removed, `WAGenericTag` is used instead, if you have class extensions there you need to move them to `WAGenericTag`
   * parsing an URL with a non-numeric port (eg. `http://www.seaside.st:8x/`) will now signal a `WAInvalidUrlSyntaxError`
   * the following deprecated methods have been removed
-    * WARequestCookie class >> #fromString:
-    * WAUrl >> #pathString
-    * WAPopupAnchorTag >> #name
-    * WAPopupAnchorTag >> #name:
+    * `WARequestCookie class >> #fromString:`
+    * `WAUrl >> #pathString`
+    * `WAPopupAnchorTag >> #name`
+    * `WAPopupAnchorTag >> #name:`
   * The metacello configuration `ConfigurationOfSeaside3`'s default group now loads Core,Email,JSON,Javascript,JQuery and JQueryUI groups while it previously only loaded the Core group. This enhances discoverability for newcomers and existing users can still configure the load to only load the groups they need.
   * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see [#820](https://github.com/SeasideSt/Seaside/issues/820).
   * Dialects with namespaces (eg. VM) need to implement `GRPlatform >> #bindingOf:`, an example implementation can be found in the comments.
