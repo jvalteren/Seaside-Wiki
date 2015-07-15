@@ -21,7 +21,7 @@ Seaside 3.1 contains the following changes.
 
 # Bugs Fixed #
   * [#111](https://github.com/SeasideSt/Seaside/issues/111): jumpTo instance variable on WASession
-  * [#244](https://github.com/SeasideSt/Seaside/issues/244)) : WABatchedList>>hasMultiplePages
+  * [#244](https://github.com/SeasideSt/Seaside/issues/244): WABatchedList>>hasMultiplePages
   * [#325](https://github.com/SeasideSt/Seaside/issues/325): Force the use of cookies
   * [#364](https://github.com/SeasideSt/Seaside/issues/364): add always redirect option to WARegistry
   * [#453](https://github.com/SeasideSt/Seaside/issues/453): document path consumer
