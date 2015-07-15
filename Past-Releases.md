@@ -1,6 +1,6 @@
 | **Announcement** | **Distribution** | **Date** | **Changelog** |
 |:-----------------|:-----------------|:---------|:--------------|
-| Seaside 3.1.1 |  | Friday, May 25, 2014 | Seaside311Changelog |
+| Seaside 3.1.1 |  | Friday, May 25, 2014 | [[Seaside311Changelog]] |
 | Seaside 3.1 | [files](http://www.seaside.st/distributions/Seaside-3.1-OneClick.zip) | Friday, Dezember 27, 2013 | [[Seaside310Changelog]] |
 | Seaside 3.0.10 | [files](http://www.seaside.st/distributions/Seaside-3.0.10-OneClick.zip) | Friday, Dezember 27, 2013 | [[Seaside3010Changelog]] |
 | Seaside 3.0.9 |  | Monday, September 16, 2013 | [[Seaside309Changelog]] |
