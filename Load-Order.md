@@ -1,4 +1,4 @@
-Details: ![http://seaside.googlecode.com/files/seaside-dependencies-reduced-notests-2009-07-19.svg](http://seaside.googlecode.com/files/seaside-dependencies-reduced-notests-2009-07-19.svg)
+Details: <http://seaside.googlecode.com/files/seaside-dependencies-reduced-notests-2009-07-19.svg>
 
 # Basic #
   * Grease-Core
