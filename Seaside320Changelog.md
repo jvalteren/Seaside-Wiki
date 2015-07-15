@@ -38,6 +38,7 @@
   * [#828](https://github.com/SeasideSt/Seaside/issues/828): replace TimeStamp with DateAndTime
   * [#830](https://github.com/SeasideSt/Seaside/issues/830):    	(ENH) Javascript Condition with else decoration (JSConditionElse)
   * [#833](https://github.com/SeasideSt/Seaside/issues/833): WARequest>>destroy doesn't set the body' to nil
+  * [#846](https://github.com/SeasideSt/Seaside/issues/846): Allow the usage of IE9 for HTML5Shiv support
 
 # Breaking Changes #
   * the type of an input element is no longer in its class
