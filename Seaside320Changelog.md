@@ -1,6 +1,6 @@
 # Features #
   * new session cache with better performance and scalability
-    * Supports both idle and absolute timeouts as recommended by [OWASP Session Management Cheat Sheet](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration)
+    * Supports both idle and absolute timeouts as recommended by [OWASP Session Management](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet#Automatic_Session_Expiration)
     * access by key is fast (O(1) average case O(n) worst case)
     * reaping expired sessions is proportional (O(n)) to the number of expired session and independent of the total number of sessions (O(1))
     * creating a new session independent of the total number of sessions
