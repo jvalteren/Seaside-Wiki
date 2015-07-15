@@ -1,5 +1,3 @@
-# Introduction #
-
 Pharo Build is a [Hudson](http://www.hudson-ci.org/) plugin to build [Pharo](http://www.pharo-project.org) images.
 
 # Features #
