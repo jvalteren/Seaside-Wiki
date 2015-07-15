@@ -14,32 +14,7 @@
   * configurations hold on to bindings instead of classes
   * WAMutex owner is now a transient value
 
-# Breaking Changes #
-  * the type of an input element is no longer in its class
-    * you have to change the CSS selector of the input type eg `.checkbox` to `[type='checkbox']`
-  * inline JavaScript in XHTML in XML mode will no longer work
-  * we no longer ship JavaScript libraries for generating and parsing JSON
-  * server adapter authors should send `#rfc6265String` instead of #`oldNetscapeString`, #`rfc2109String`, #`rfc2965String`, #`rfc6265String`
-  * Cookie2 support is gone (only Opera ever supported it but doesn't anymore)
-  * `WADivTag` has been removed, `WAGenericTag` is used instead, if you have class extensions there you need to move them to `WAGenericTag`
-  * parsing an URL with a non-numeric port (eg. `http://www.seaside.st:8x/`) will now signal a `WAInvalidUrlSyntaxError`
-  * the following deprecated methods have been removed
-    * WARequestCookie class >> #fromString:
-    * WAUrl >> #pathString
-    * WAPopupAnchorTag >> #name
-    * WAPopupAnchorTag >> #name:
-  * The metacello configuration `ConfigurationOfSeaside3`'s default group now loads Core,Email,JSON,Javascript,JQuery and JQueryUI groups while it previously only loaded the Core group. This enhances discoverability for newcomers and existing users can still configure the load to only load the groups they need.
-  * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see [#820](https://github.com/SeasideSt/Seaside/issues/820).
-  * Dialects with namespaces (eg. VM) need to implement `GRPlatform >> #bindingOf:`, an example implementation can be found in the comments.
-  * [#262](https://github.com/SeasideSt/Seaside/issues/262): Creating a new session is O(n)
-    * `WASession >> #buildCache` has been renamed to `#createDocumentHandlerCache` and returns a new cache instance
-    * `WASession >> #createCache` has been renamed to `#createContinuationCache` and returns a new cache instance
-    * `WASession >> #cache` has been renamed to `#documentHandlers`
-    * `WARegistry >> #keyFor:` has been removed
-    * the session cache is unidirectional and no longer bidirectional
-    * `Dictionary >> #valuesCollect:` has been removed
-
-# Bugs Fixed #
+# Issues Resolved #
 
 The following bugs were fixed:
   * [#706](https://github.com/SeasideSt/Seaside/issues/706): Remove WADivTag
@@ -64,3 +39,28 @@ The following bugs were fixed:
   * [#828](https://github.com/SeasideSt/Seaside/issues/828): replace TimeStamp with DateAndTime
   * [#830](https://github.com/SeasideSt/Seaside/issues/830):    	(ENH) Javascript Condition with else decoration (JSConditionElse)
   * [#833](https://github.com/SeasideSt/Seaside/issues/833): WARequest>>destroy doesn't set the body' to nil
+
+# Breaking Changes #
+  * the type of an input element is no longer in its class
+    * you have to change the CSS selector of the input type eg `.checkbox` to `[type='checkbox']`
+  * inline JavaScript in XHTML in XML mode will no longer work
+  * we no longer ship JavaScript libraries for generating and parsing JSON
+  * server adapter authors should send `#rfc6265String` instead of #`oldNetscapeString`, #`rfc2109String`, #`rfc2965String`, #`rfc6265String`
+  * Cookie2 support is gone (only Opera ever supported it but doesn't anymore)
+  * `WADivTag` has been removed, `WAGenericTag` is used instead, if you have class extensions there you need to move them to `WAGenericTag`
+  * parsing an URL with a non-numeric port (eg. `http://www.seaside.st:8x/`) will now signal a `WAInvalidUrlSyntaxError`
+  * the following deprecated methods have been removed
+    * WARequestCookie class >> #fromString:
+    * WAUrl >> #pathString
+    * WAPopupAnchorTag >> #name
+    * WAPopupAnchorTag >> #name:
+  * The metacello configuration `ConfigurationOfSeaside3`'s default group now loads Core,Email,JSON,Javascript,JQuery and JQueryUI groups while it previously only loaded the Core group. This enhances discoverability for newcomers and existing users can still configure the load to only load the groups they need.
+  * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see [#820](https://github.com/SeasideSt/Seaside/issues/820).
+  * Dialects with namespaces (eg. VM) need to implement `GRPlatform >> #bindingOf:`, an example implementation can be found in the comments.
+  * [#262](https://github.com/SeasideSt/Seaside/issues/262): Creating a new session is O(n)
+    * `WASession >> #buildCache` has been renamed to `#createDocumentHandlerCache` and returns a new cache instance
+    * `WASession >> #createCache` has been renamed to `#createContinuationCache` and returns a new cache instance
+    * `WASession >> #cache` has been renamed to `#documentHandlers`
+    * `WARegistry >> #keyFor:` has been removed
+    * the session cache is unidirectional and no longer bidirectional
+    * `Dictionary >> #valuesCollect:` has been removed
