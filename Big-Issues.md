@@ -1,5 +1,3 @@
-# Introduction #
-
 That's a list of what I consider the biggest and hardest to fix regression issues issues Seaside 3.0 has over 2.8
 
 
