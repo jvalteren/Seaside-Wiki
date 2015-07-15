@@ -33,10 +33,10 @@ Documentation
  * [[Pharo Build|Pharo-Build]]
 
 Sprints
- * [[Seaside-Sprint-Brescia-2015]]
- * [[SeasideSprintEsug2014]]
- * [[SeasideSprintEsug2012]]
- * [[SeasideSprintBernFebruary2012]]
+ * [[ESUG 2015|Seaside-Sprint-Esug-2015]]
+ * [[ESUG 2014|Seaside-Sprint-Esug-2014]]
+ * [[ESUG 2012|Seaside-Sprint-Esug-2012]]
+ * [[Bern 2012|Seaside-Sprint-Bern-February-2012]]
  * [[Seaside3ReleaseMiniSprint]]
  * [[SeasideSprintBrestSeptember2009]]
  * [[SeasideSprintZugFebruary2009]]
