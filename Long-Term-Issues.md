@@ -1,5 +1,3 @@
-# Long Term Issues #
-
 The following are some long term issues that we may want to fix at some point.
 
 ## Rework Configuration ##
