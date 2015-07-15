@@ -1,5 +1,5 @@
 # Location #
-
+Amsterdam
   * Friday, August 29, 2008
     * 14:00 - 17:00 [Cafe Kobalt](http://www.cafekobalt.nl/location_en.htm)
     * 17:00 - 22:00 [Public Library](http://www.oba.nl/)
