@@ -22,15 +22,15 @@ Development
  * [[Package Naming|Package-Naming]]
 
 Documentation
- * [[SecurityFeatures]]
- * [[SeasideRest]]
- * [[SeasideAddOnLibraries]]
- * [[LoadOrder]]
+ * [[Security Features|Security-Features]]
+ * [[Seaside-REST]]
+ * [[Add-On Libraries|Add-On-Libraries]]
+ * [[Load Order|Load-Order]]
  * [[Gettext]]
  * [[FileLibrary]]
- * [[LongTermIssues]]
- * [[BigIssues]]
- * [[PharoBuild]]
+ * [[Long-Term Issues|Long-Term-Issues]]
+ * [[Big Issues|Big-Issues]]
+ * [[Pharo Build|Pharo-Build]]
 
 Sprints
  * [[Seaside-Sprint-Brescia-2015]]
