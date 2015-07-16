@@ -58,6 +58,7 @@
     * `WAPopupAnchorTag >> #name:`
   * The metacello configuration `ConfigurationOfSeaside3`'s default group now loads Core,Email,JSON,Javascript,JQuery and JQueryUI groups while it previously only loaded the Core group. This enhances discoverability for newcomers and existing users can still configure the load to only load the groups they need.
   * We store class bindings instead of classes in configuration values. Therefore all configurations have to be registered again, see [#820](https://github.com/SeasideSt/Seaside/issues/820).
+  * the default server manager needs to be reset with: `WAServerManager instVarNamed: 'default' put: nil`
   * Dialects with namespaces (eg. VM) need to implement `GRPlatform >> #bindingOf:`, an example implementation can be found in the comments.
   * [#262](https://github.com/SeasideSt/Seaside/issues/262): Creating a new session is O(n)
     * `WASession >> #buildCache` has been renamed to `#createDocumentHandlerCache` and returns a new cache instance
