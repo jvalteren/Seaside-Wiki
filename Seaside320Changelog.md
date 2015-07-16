@@ -12,7 +12,7 @@
 ## GemStone/S related improvements
   * dedicated cache implementation
   * configurations hold on to bindings instead of classes
-  * WAMutex owner is now a transient value
+  * no longer uses a fork of Seaside-Core and Seaside-Session 
 
 # Issues Resolved #
 
