@@ -47,7 +47,7 @@
     * you have to change the CSS selector of the input type eg `.checkbox` to `[type='checkbox']`
   * inline JavaScript in XHTML in XML mode will no longer work
   * we no longer ship JavaScript libraries for generating and parsing JSON
-  * server adapter authors should send `#rfc6265String` instead of #`oldNetscapeString`, #`rfc2109String`, #`rfc2965String`, #`rfc6265String`
+  * server adapter authors should send `#rfc6265String` instead of #`oldNetscapeString`, #`rfc2109String` or #`rfc2965String`
   * Cookie2 support is gone (only Opera ever supported it but doesn't anymore)
   * `WADivTag` has been removed, `WAGenericTag` is used instead, if you have class extensions there you need to move them to `WAGenericTag`
   * parsing an URL with a non-numeric port (eg. `http://www.seaside.st:8x/`) will now signal a `WAInvalidUrlSyntaxError`
