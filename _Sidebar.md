@@ -14,6 +14,8 @@ Changelogs
  * [[3.0.4|Seaside304Changelog]]
  * [[3.0.3|Seaside303Changelog]]
  * [[3.0.2|Seaside302Changelog]]
+ * [[2.8|Seaside28Changelog]]
+ * [[2.7|Seaside27Changelog]]
 
 Development
  * [[Coding Conventions|Coding-Conventions]]
