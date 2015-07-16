@@ -61,3 +61,34 @@ In Detail
   * lots of xhtml validation related fixes
   * clean up, remove lots of old unused stuff
   * better portability
+
+## Migrate from 2.7 to 2.8
+
+### Must
+
+  * [[Seaside 2.6 to 2.7|Seaside27Changelog.md]]
+  * stop your server (e.g. `WAKom`) and evaluate `WADispatcher resetAll`
+  * migrate to `WARenderCanvas`
+  * backtrack state by implementing `#states` (check all senders of `#registerObjectForBacktracking:` and `#registerForBacktracking`), `WAStateHolders` do not do any backtracking anymore
+  * move to new header api, modify `#updateRoot:`. `#linkToStyle` becomes `#stylesheet` `#url`, `#linkToScript` becomes `#javascript` `#url:`, check all implementors of `#updateRoot:`
+  * use `WAAnchorTag >> #with:` instead of `WAAnchorTag >> #text:`
+  * replace users of `WAChangePassword`, `WAEditDialog`, `WAEmailConfirmation`, `WAGridDialog`, `WALoginDialog`, `WANoteDialog`
+  * every component that implements `#initialize` must send this message also to super (use SLint)
+  * if you use Squeak 3.7 load SeasideSqueak37 after Seaside
+  * if you use Squeak do not load into an image that has an earlier version of Seaside already loaded
+  * For `WAImageTag` use the composed `#document:mimeType:fileName:` selector (or a short version of it) instead of a cascade of selector parts
+  * if you loaded an intermediate version of Seaside 2.8 Seaside2.8a1-lr.404 removes `WACookieSession`, you should go back to subclassing `WASession`
+  * migrate from `WAScriptLibrary` and `WAStyleLibrary` to `WAFileLibrary` (check class comment of `WAFileLibrary`)
+  * the "base path" configuration option has been replaced by "Server Path"
+
+### Should
+
+  * use `#heading level:`; with: instead of `#heading:level:`
+  * check for deprecated message sends
+  * remove the implementors of `#rendererClass` that return `WAHtmlCanvas`
+  * use `WAValueHolder` if you just need an object that wraps a value instead of `ValueHolder` or `WAStateHolder`
+  * `WAUrl >> #scheme:` expects a `String` and no longer a `Symbol`
+
+### Rewrite Rules
+
+Boris Popov has some rewrite rules to ease migration Moving from [2.7 to 2.8](http://leftshore.wordpress.com/2007/07/06/moving-from-27-to-28/)

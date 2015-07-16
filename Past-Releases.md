@@ -21,4 +21,5 @@
 | [Seaside 2.8.3](http://lists.squeakfoundation.org/pipermail/seaside/2008-August/018628.html) | [sar](http://map.squeak.org/accountbyid/771b44e8-e84b-4f54-8fee-e7cf5b4e4ee4/files/seaside-2.8.3.sar) | Sunday, August 24, 2008 |
 | [Seaside 2.8.2](http://lists.squeakfoundation.org/pipermail/seaside/2008-June/017939.html) | [sar](http://map.squeak.org/accountbyid/771b44e8-e84b-4f54-8fee-e7cf5b4e4ee4/files/seaside-2.8.2.sar) | Sunday, June 8, 2008 |
 | [Seaside 2.8.1](http://lists.squeakfoundation.org/pipermail/seaside/2008-April/017392.html) | [sar](http://map.squeak.org/accountbyid/771b44e8-e84b-4f54-8fee-e7cf5b4e4ee4/files/seaside-2.8.1.sar) | Thursday, April 17, 2008 |
-| [Seaside 2.8](http://lists.squeakfoundation.org/pipermail/seaside/2007-October/014930.html) | [sar](http://map.squeak.org/accountbyid/771b44e8-e84b-4f54-8fee-e7cf5b4e4ee4/files/seaside-2.8.sar) | Sunday, October 28, 2007 |
+| [Seaside 2.8](http://lists.squeakfoundation.org/pipermail/seaside/2007-October/014930.html) | [sar](http://map.squeak.org/accountbyid/771b44e8-e84b-4f54-8fee-e7cf5b4e4ee4/files/seaside-2.8.sar) | Sunday, October 28, 2007 | [[Seaside28Changelog]] 
+| Seaside 2.7 | | | [[Seaside27Changelog]] 
