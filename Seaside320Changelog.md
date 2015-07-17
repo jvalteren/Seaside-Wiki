@@ -12,7 +12,7 @@
 ## GemStone/S related improvements
   * dedicated cache implementation
   * configurations hold on to bindings instead of classes
-  * no longer uses a fork of Seaside-Core and Seaside-Session 
+  * no longer uses a fork of Seaside-Core, Seaside-Session and Seaside-Environment
 
 # Issues Resolved #
 
