@@ -16,6 +16,7 @@
 
 # Issues Resolved #
 
+  * [#615](https://github.com/SeasideSt/Seaside/issues/615): Depricate WARenderContext >> #callbackAt:
   * [#706](https://github.com/SeasideSt/Seaside/issues/706): Remove WADivTag
   * [#763](https://github.com/SeasideSt/Seaside/issues/763): Add support for srcset on img and source tag
   * [#777](https://github.com/SeasideSt/Seaside/issues/777): Make TestCase >> #fail SLime rule
