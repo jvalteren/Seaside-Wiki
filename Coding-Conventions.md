@@ -57,6 +57,9 @@ Seaside code has to work on many platforms. At the end of the day the porters wi
 
 Making sure all objects are properly initialized can be complex, particularly when dealing with multiple platforms. We have adopted [ObjectInitialization](ObjectInitialization) in Seaside to make sure behaviour is consistent.
 
+In Pharo, the class-side `#initialize` is run on the first load of code or when 
+the source of the `#initialize` method changes. In VA Smalltalk, the class side #initialize is run on every load of code.
+
 # Formatting #
 
 We are picky about formatting so this gets its own section.
