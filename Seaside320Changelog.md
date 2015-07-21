@@ -44,6 +44,7 @@
   * [#842](https://github.com/SeasideSt/Seaside/issues/842): add the ability to send an arbitrary string back along with the passenger id
   * [#843](https://github.com/SeasideSt/Seaside/issues/843): add #basicStop to WATestServerAdapter
   * [#846](https://github.com/SeasideSt/Seaside/issues/846): Allow the usage of IE9 for HTML5Shiv support
+  * [#851](https://github.com/SeasideSt/Seaside/issues/851): WASession >> #unregister does signal an error
 
 # Breaking Changes #
   * the type of an input element is no longer in its class
