@@ -86,6 +86,7 @@ Seaside 3.1 contains the following changes.
   * `WACookie >> #oldNetscapeStringWithoutKey` is now in Seaside-Adaptors-Comanche
   * `WAUrl` >> #pathString is deprecated, use either `#pathStringUnencoded` or `#pathStringEncodedWith:`
   * The default doctype is now html5
+  * Argument of `addLoadScript:`,`addLoadScriptFirst:` should always be a `JSObject` (sub)instance. Previously, strings were accepted as Js scripts.
 
 ## Server Adaptors ##
   * if your server supports access to the SSL session id implement `#sslSessionIdFor:`
