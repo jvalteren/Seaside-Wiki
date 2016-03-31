@@ -45,6 +45,7 @@
   * [#843](https://github.com/SeasideSt/Seaside/issues/843): add #basicStop to WATestServerAdapter
   * [#846](https://github.com/SeasideSt/Seaside/issues/846): Allow the usage of IE9 for HTML5Shiv support
   * [#851](https://github.com/SeasideSt/Seaside/issues/851): WASession >> #unregister does signal an error
+  * [#863](https://github.com/SeasideSt/Seaside/issues/863): Scriptaculous scripts are still strings when the should be script objects
 
 # Breaking Changes #
   * the type of an input element is no longer in its class
