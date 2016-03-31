@@ -72,6 +72,7 @@
     * `WARegistry >> #keyFor:` has been removed
     * the session cache is unidirectional and no longer bidirectional
     * `Dictionary >> #valuesCollect:` has been removed
+  *  In Seaside 3.0, the argument of `addLoadScript:`,`addLoadScriptFirst:` may be a string. As from 3.1 it should always be a `JSObject` (sub)instance. This was not clearly documented when 3.1 was released, therefore we repeat this here.
 
 # Upgrading #
 We recommend loading the code into a new image. If that's not possible for you try the following procedure:
