@@ -9,7 +9,9 @@ We have set-up automated [Travis-CI tests](https://travis-ci.org/SeasideSt/Seasi
 
 All Seaside code is licensed under the MIT License and, by submitting code to the project, you are agreeing to provide your code under this license. Before submitting, please also ensure that you have the legal rights to license the code you are submitting; in many areas, your employer may own the rights to code you create even in your spare time.
 
-Once you have submitted a few patches and are comfortable with our process and coding conventions feel free to ask to be added as a developer on Github SeasideSt team. Just create an account and ask on the Developer Mailing list, providing your username.
+Seaside development discussions take place on the [Developer Mailing list](http://lists.squeakfoundation.org/mailman/listinfo/seaside-dev). Feel free to send us an email there.
+
+Once you have submitted a few patches and are comfortable with our process and coding conventions feel free to ask to be added as a developer on Github SeasideSt team. Just create an account and ask on the [Developer Mailing list](http://lists.squeakfoundation.org/mailman/listinfo/seaside-dev), providing your username.
 
 #Picking something to work on
 
@@ -21,8 +23,8 @@ You can see if there are any bugs marked "BiteSize". These issues have been mark
 
 Besides code there are many other ways to help:
 
-Communication, Marketing
-Documentation
-Release engineering
-Web site
-Ask in the Mailing Lists.
+- Communication, Marketing
+- Documentation
+- Release engineering
+- Web site
+- Ask in the [Mailing Lists](http://www.seaside.st/community/mailinglist).
