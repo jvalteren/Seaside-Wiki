@@ -1,14 +1,16 @@
 | **Announcement** | **Distribution** | **Date** | **Changelog** |
 |:-----------------|:-----------------|:---------|:--------------|
+| Seaside 3.1.5 |  | Sunday, March 20, 2016 |  |
+| Seaside 3.1.4 |  | Saturday, April 18, 2015 |  |
 | Seaside 3.1.3 |  | Saturday, September 06, 2014 | [[Seaside313Changelog]] |
 | Seaside 3.1.2 |  | Friday, July 11, 2014 | [[Seaside312Changelog]] |
 | Seaside 3.1.1 |  | Friday, May 25, 2014 | [[Seaside311Changelog]] |
-| Seaside 3.1 | [files](http://www.seaside.st/distributions/Seaside-3.1-OneClick.zip) | Friday, Dezember 27, 2013 | [[Seaside310Changelog]] |
-| Seaside 3.0.10 | [files](http://www.seaside.st/distributions/Seaside-3.0.10-OneClick.zip) | Friday, Dezember 27, 2013 | [[Seaside3010Changelog]] |
+| Seaside 3.1 | [files](http://www.seaside.st/distributions/Seaside-3.1-OneClick.zip) | Friday, December 27, 2013 | [[Seaside310Changelog]] |
+| Seaside 3.0.10 | [files](http://www.seaside.st/distributions/Seaside-3.0.10-OneClick.zip) | Friday, December 27, 2013 | [[Seaside3010Changelog]] |
 | Seaside 3.0.9 |  | Monday, September 16, 2013 | [[Seaside309Changelog]] |
 | Seaside 3.0.7 | [files](http://www.seaside.st/distributions/Seaside-3.0.7-OneClick.zip) | Monday, April 2, 2012 | [[Seaside307Changelog]] |
 | Seaside 3.0.6 | [files](http://www.seaside.st/distributions/Seaside-3.0.6-OneClick.zip) | Sunday, September 11, 2011 | [[Seaside306Changelog]] |
-| Seaside 3.0.5 | [files](http://www.seaside.st/distributions/Seaside-3.0.5-OneClick.zip) | Sunday, Mai 22, 2011 | [[Seaside305Changelog]] |
+| Seaside 3.0.5 | [files](http://www.seaside.st/distributions/Seaside-3.0.5-OneClick.zip) | Sunday, May 22, 2011 | [[Seaside305Changelog]] |
 | Seaside 3.0.4 | [files](http://www.seaside.st/distributions/Seaside-3.0.4-OneClick.zip) | Saturday, March 5, 2011 | [[Seaside304Changelog]] |
 | Seaside 3.0.3 | [files](http://www.seaside.st/distributions/Seaside-3.0.3-OneClick.zip) | Saturday, December 17, 2010 | [[Seaside303Changelog]] |
 | Seaside 3.0.2 | [files](http://www.seaside.st/distributions/Seaside-3.0.2-OneClick.zip) | Monday, November 22, 2010 | [[Seaside302Changelog]] |
