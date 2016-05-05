@@ -1,7 +1,7 @@
 #Code
 We recommend contributing to Seaside using [Github pull requests](https://help.github.com/articles/using-pull-requests/): fork the repository and submit a pull request with your changes. Core Seaside developers can create a branch in the main Seaside repository but we prefer a pull request is made for inclusion in the main branch as well. 
 
-Dale Henrich's guide to [Getting started with Github](https://github.com/dalehenrich/metacello-work/blob/master/docs/GettingStartedWithGitHub.md) for Smalltalk development is a good read if you are new to using Github for Smalltalk projects. We are also working on some [Practical Guidelines for Smalltalk development with Git].
+Dale Henrich's guide to [Getting started with Github](https://github.com/dalehenrich/metacello-work/blob/master/docs/GettingStartedWithGitHub.md) for Smalltalk development is a good read if you are new to using Github for Smalltalk projects. We are also working on some [[Practical Guidelines for Smalltalk development with Git]].
 
 Please take the time to add comments and tests and provide a description of the change and the reason for the change in each commit message. Once you have submitted your pull request, an existing developer will then review the submission and either provide feedback or integrate the change. Sometimes we decide not to integrate a change. When this happens, there is usually a good reason; please ask if you aren’t clear why your submission was not integrated.
 
