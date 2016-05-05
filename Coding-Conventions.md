@@ -15,7 +15,7 @@ Seaside code has to work on many platforms. At the end of the day the porters wi
   * Use `GRPlatform` sparingly and only if there is absolutely no other way.
   * Non-ASCII Strings and Characters are inherently unportable. Same goes for class look-up, compilation and IO. `Character cr` and `Character lf` are not the same on all platforms.
   * Don't use any dialect specific syntax, like byte array literals `#[ ]`, curly braces `{ }`, or pragmas `<pragma>`.
-  * For portable code subclass `GRObject`. This makes sure your objects will receive an `#initialize` message upon creation, see [ObjectInitialization](ObjectInitialization) for details.
+  * For portable code subclass `GRObject`. This makes sure your objects will receive an `#initialize` message upon creation, see [Object Initialization](Object Initialization) for details.
   * Instead of `Random` and `Semaphore` use `GRPlatform current newRandom` and `GRPlatform current semaphoreClass`.
   * Instead of `TimeStamp` use `DateAndTime`
   * Do not do non-local returns in error handler block.
@@ -55,7 +55,7 @@ Seaside code has to work on many platforms. At the end of the day the porters wi
 
 # Initialization and Instance Creation #
 
-Making sure all objects are properly initialized can be complex, particularly when dealing with multiple platforms. We have adopted [ObjectInitialization](ObjectInitialization) in Seaside to make sure behaviour is consistent.
+Making sure all objects are properly initialized can be complex, particularly when dealing with multiple platforms. We have adopted [Object Initialization](Object Initialization) in Seaside to make sure behaviour is consistent.
 
 In Pharo, the class-side `#initialize` is run on the first load of code or when 
 the source of the `#initialize` method changes. In VA Smalltalk, the class side #initialize is run on every load of code.
