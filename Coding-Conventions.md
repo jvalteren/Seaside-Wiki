@@ -85,5 +85,5 @@ We are picky about formatting so this gets its own section.
   * Avoid the use of `#style` and `#script` if possible.
   * Refrain from using IDs and use CSS classes instead.
   * Use your author initials as author initials, not your name.
-  * Follow the [PackageNaming](PackageNaming).
+  * Follow the [Package Naming](Package Naming).
   * If you change the package structure also update the scripts that generate the dependency graphs and Universe.
