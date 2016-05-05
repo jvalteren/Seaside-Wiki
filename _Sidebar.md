@@ -18,6 +18,7 @@ Changelogs
  * [[2.7|Seaside27Changelog]]
 
 Development
+ * [[Contributing|Contributing]]
  * [[Coding Conventions|Coding-Conventions]]
  * [[Make Release|Make-Release]]
  * [[Object Initialization|Object-Initialization]]
