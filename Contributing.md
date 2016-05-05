@@ -17,7 +17,7 @@ Once you have submitted a few patches and are comfortable with our process and c
 
 If you have no itch to scratch you can pick an issue from the bug tracker that nobody has yet started on to work.
 
-You can see if there are any bugs marked "BiteSize". These issues have been marked by the core developers as being appropriate for someone with limited experience or available time and are a good place to get your feet wet. The issue should have a clearly-documented solution and should normally be doable with a few hours of work or less. Still, they may be harder than we thought so if you run into trouble, feel free to ask for help or clarification on the Developer Mailing List
+You can see if there are any bugs marked ["BiteSize"](https://github.com/SeasideSt/Seaside/labels/BiteSize). These issues have been marked by the core developers as being appropriate for someone with limited experience or available time and are a good place to get your feet wet. The issue should have a clearly-documented solution and should normally be doable with a few hours of work or less. Still, they may be harder than we thought so if you run into trouble, feel free to ask for help or clarification on the Developer Mailing List
 
 #Non-code contributions
 
