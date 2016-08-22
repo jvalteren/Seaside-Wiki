@@ -3,6 +3,7 @@
 # Features #
 
 # Issues Resolved #
+[Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
 
 # Breaking Changes #
 
