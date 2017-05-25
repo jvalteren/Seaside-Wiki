@@ -1,4 +1,4 @@
-#Code
+#Code# 
 We recommend contributing to Seaside using [Github pull requests](https://help.github.com/articles/using-pull-requests/): fork the repository and submit a pull request with your changes. Core Seaside developers can create a branch in the main Seaside repository but we prefer a pull request is made for inclusion in the main branch as well. 
 
 Dale Henrich's guide to [Getting started with Github](https://github.com/dalehenrich/metacello-work/blob/master/docs/GettingStartedWithGitHub.md) for Smalltalk development is a good read if you are new to using Github for Smalltalk projects. We are also working on some [[Practical Guidelines for Smalltalk development with Git]].
@@ -15,13 +15,13 @@ Seaside development discussions take place on the [Developer Mailing list](http:
 
 Once you have submitted a few patches and are comfortable with our process and coding conventions feel free to ask to be added as a developer on Github SeasideSt team. Just create an account and ask on the [Developer Mailing list](http://lists.squeakfoundation.org/mailman/listinfo/seaside-dev), providing your username.
 
-#Picking something to work on
+#Picking something to work on#
 
 If you have no itch to scratch you can pick an issue from the bug tracker that nobody has yet started on to work.
 
 You can see if there are any bugs marked ["BiteSize"](https://github.com/SeasideSt/Seaside/labels/BiteSize). These issues have been marked by the core developers as being appropriate for someone with limited experience or available time and are a good place to get your feet wet. The issue should have a clearly-documented solution and should normally be doable with a few hours of work or less. Still, they may be harder than we thought so if you run into trouble, feel free to ask for help or clarification on the Developer Mailing List
 
-#Non-code contributions
+#Non-code contributions#
 
 Besides code there are many other ways to help:
 
