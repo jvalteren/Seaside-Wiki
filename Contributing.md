@@ -1,5 +1,15 @@
+Seaside development on git follows the [Git Flow branching model](http://nvie.com/posts/a-successful-git-branching-model/). In short, we have two main branches:
+- [master](https://github.com/SeasideSt/Seaside/tree/master): the stable version of Seaside
+- [develop](https://github.com/SeasideSt/Seaside/tree/develop): the trunk version where development on the next version is happening
+Bugfixes are always done on a separate branch which is merged into both master and develop.
+New features are always done on a separate branch which is merged into develop.
+When a new release is ready, 
+
 # Code
-We recommend contributing to Seaside using [Github pull requests](https://help.github.com/articles/using-pull-requests/): fork the repository and submit a pull request with your changes. Core Seaside developers can create a branch in the main Seaside repository but we prefer a pull request is made for inclusion in the main branch as well. 
+We recommend contributing to Seaside using [Github pull requests](https://help.github.com/articles/using-pull-requests/): fork the repository and submit a pull request with your changes. Core Seaside developers can create a branch in the main Seaside repository but we prefer a pull request is made for inclusion in the main branch as well.
+
+If you are contributing a bugfix, then please pull against the master branch.
+If you are contributing a new feature, then please pull against develop.
 
 Dale Henrich's guide to [Getting started with Github](https://github.com/dalehenrich/metacello-work/blob/master/docs/GettingStartedWithGitHub.md) for Smalltalk development is a good read if you are new to using Github for Smalltalk projects. We are also working on some [[Practical Guidelines for Smalltalk development with Git]].
 
