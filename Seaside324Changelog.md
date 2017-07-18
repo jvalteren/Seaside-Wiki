@@ -8,5 +8,8 @@
 # Breaking Changes
 None
 
+#Gemstone/S Related Changes
+* [#931](https://github.com/SeasideSt/Seaside/pull/931): Fixes to make Seaside 3.2 load in GemStone 3.4
+
 # Upgrading
 No known issues
