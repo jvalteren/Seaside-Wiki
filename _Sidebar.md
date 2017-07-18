@@ -1,7 +1,7 @@
 Changelogs
  * [[Past Releases|Past-Releases]]
  * [[3.3.0|Seaside330Changelog]]
- * [[3.2.4|https://github.com/SeasideSt/Seaside/milestone/5]]
+ * [[3.2.4|Seaside324Changelog]]
  * [[3.2.2|Seaside322Changelog]]
  * [[3.2.1|Seaside321Changelog]]
  * [[3.2.0|Seaside320Changelog]]
