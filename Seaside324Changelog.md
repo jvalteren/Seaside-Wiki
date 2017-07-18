@@ -1,5 +1,4 @@
 # Features
-Compatibility for Pharo 6
 
 # Issues Resolved
   * [#896](https://github.com/SeasideSt/Seaside/issues/835): WAClassListAttribute >> #stringForValue: send for tracking strategies and tracking strategy classes
