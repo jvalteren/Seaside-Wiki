@@ -1,5 +1,7 @@
 **Seaside 3.3.0 has not yet been released.**
 
+Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Grease-1.3-Changelog)
+
 # Features #
 - Seaside-REST supports OPTIONS
 - Seaside-REST supports PATCH
