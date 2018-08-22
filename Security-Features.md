@@ -20,7 +20,7 @@ Further information:
 
 ## Cross-Site Request Forgery (CSRF) ##
 
-Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are random numbers that are bound to the session. The same action gets a new random number every time.
+Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation) which is identified by a random number which acts like a CSRF token.
 
 Further information:
   * http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
