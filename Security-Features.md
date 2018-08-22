@@ -11,6 +11,7 @@ Further information:
 Not possible because client supplied session ids are ignored when no matching session is found. Review the implementors of `#noHandlerFoundForKey:in:context:`.
 
 ## Cross-site Scripting (XSS) ##
+
 The Seaside templating engine—the render canvas—escapes all output by default. It therefore adopts a safe by default policy. Special effort has to be taken to render values without escaping. Such places can easily be found and audited by looking at all the senders of #html:.
 
 Further information:
@@ -20,7 +21,7 @@ Further information:
 
 ## Cross-Site Request Forgery (CSRF) ##
 
-Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation) which is identified by a random number which acts like a CSRF token.
+Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation). The state snapshots are identified by a random number which is session specific and acts like a CSRF token.
 
 Further information:
   * http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
