@@ -5,14 +5,13 @@ Unlike some low level frameworks Seaside offers built in protection against many
 This is how Seaside protects you against common attacks against your web application.
 
 ## Session Fixation ##
+Session fixation is not possible because client supplied session ids are ignored when no matching session is found. Review the implementors of `#noHandlerFoundForKey:in:context:`.
+
 Further information:
   * http://www.owasp.org/index.php/Session_fixation
 
-Not possible because client supplied session ids are ignored when no matching session is found. Review the implementors of `#noHandlerFoundForKey:in:context:`.
-
 ## Cross-site Scripting (XSS) ##
-
-The Seaside templating engine—the render canvas—escapes all output by default. It therefore adopts a safe by default policy. Special effort has to be taken to render values without escaping. Such places can easily be found and audited by looking at all the senders of #html:.
+The Seaside templating engine "the render canvas" escapes all output by default. It therefore adopts a safe by default policy. Special effort has to be taken to render values without escaping. Such places can easily be found and audited by looking at all the senders of #html:.
 
 Further information:
   * http://www.owasp.org/index.php/XSS
@@ -20,14 +19,13 @@ Further information:
   * http://wonko.com/post/html-escaping
 
 ## Cross-Site Request Forgery (CSRF) ##
-
 Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation). The state snapshots are identified by a random number which is session specific and acts like a CSRF token.
 
 Further information:
   * http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
 
 ## Response Splitting ##
-HTTP response splitting is an attack that allows an attacker to control response headers and the body by injecting a header with a CR or LF value. Seaside does not allow CR or LF values in headers which are also not allowed by HTTP.
+Seaside prevents response splitting does by not allowing CR or LF values in HTTP headers.
 
 Further information:
   * http://www.owasp.org/index.php/Response_Splitting
@@ -42,6 +40,7 @@ Further information:
 In addition to the protections against the attacks above Seaside offers the following security related features.
 
 ## Capabilities ##
+Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation).
 
 ## Strict Transport Security (STS) ##
 
@@ -50,7 +49,8 @@ In addition to the protections against the attacks above Seaside offers the foll
   * request headers (body size)
 
 ## Arbitrary Code Execution ##
-`Boolean readFrom:`
+
+Some Smalltalk dialects have what is essentially an implementation of `eval()` in the form of `Object class >> #readFrom:`. You have to review that you never pass user input to this method either directly or indirectly, eg. in the form of `Boolean class >> #readFrom:`
 
 # Further Information #
   * [Open Web Application Security Project (OWASP)](http://www.owasp.org/)
