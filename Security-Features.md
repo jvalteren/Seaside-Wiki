@@ -49,8 +49,7 @@ Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based
   * request headers (body size)
 
 ## Arbitrary Code Execution ##
-
-Some Smalltalk dialects have what is essentially an implementation of `eval()` in the form of `Object class >> #readFrom:`. You have to review that you never pass user input to this method either directly or indirectly, eg. in the form of `Boolean class >> #readFrom:`
+Seaside does not interpret or execute data sent by the client. However some Smalltalk dialects have what is essentially an implementation of `eval()` in the form of `Object class >> #readFrom:`. You have to review that you never pass user input to this method either directly or indirectly, eg. in the form of `Boolean class >> #readFrom:`
 
 # Further Information #
   * [Open Web Application Security Project (OWASP)](http://www.owasp.org/)
