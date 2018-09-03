@@ -21,6 +21,8 @@ Further information:
 ## Cross-Site Request Forgery (CSRF) ##
 Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation). The state snapshots are identified by a random number which is session specific and acts like a CSRF token.
 
+It is important that this only applies to "traditional" usage of Seaside with sessions and components, this does not apply to Seaside-REST where Seaside provides no built-in protection against CSRF.
+
 Further information:
   * https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
 
