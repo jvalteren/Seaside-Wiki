@@ -2,7 +2,7 @@ Seaside-REST allows you to easily dispatch to methods based on several propertie
 
 # Loading #
 
-Seaside-REST can be found at [Seaside 3.0 Addons](http://www.squeaksource.com/Seaside30Addons.html).
+Seaside-REST can be loaded using the 'REST' group.
 
 # Details #
 
