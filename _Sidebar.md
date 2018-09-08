@@ -36,7 +36,6 @@ Documentation
  * [[FileLibrary]]
  * [[Long-Term Issues|Long-Term-Issues]]
  * [[Big Issues|Big-Issues]]
- * [[Pharo Build|Pharo-Build]]
 
 Sprints
  * [[ESUG 2015|Seaside-Sprint-Esug-2015]]
