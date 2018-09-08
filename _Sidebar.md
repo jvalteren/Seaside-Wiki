@@ -22,7 +22,7 @@ Changelogs
  * [[2.7|Seaside27Changelog]]
 
 Development
- * [[Contributing|Contributing]]
+ * [[Contributing|https://github.com/SeasideSt/Seaside/blob/master/CONTRIBUTING.md]]
  * [[Coding Conventions|Coding-Conventions]]
  * [[Make Release|Make-Release]]
  * [[Object Initialization|Object-Initialization]]
