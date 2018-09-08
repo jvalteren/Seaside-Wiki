@@ -32,7 +32,6 @@ Documentation
  * [[Security Features|Security-Features]]
  * [[Seaside-REST]]
  * [[Add-On Libraries|Add-On-Libraries]]
- * [[Load Order|Load-Order]]
  * [[Gettext]]
  * [[FileLibrary]]
  * [[Long-Term Issues|Long-Term-Issues]]
