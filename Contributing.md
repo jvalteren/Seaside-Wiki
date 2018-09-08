@@ -32,6 +32,35 @@ If you have no itch to scratch you can pick an issue from the bug tracker that n
 
 You can see if there are any bugs marked ["BiteSize"](https://github.com/SeasideSt/Seaside/labels/BiteSize). These issues have been marked by the core developers as being appropriate for someone with limited experience or available time and are a good place to get your feet wet. The issue should have a clearly-documented solution and should normally be doable with a few hours of work or less. Still, they may be harder than we thought so if you run into trouble, feel free to ask for help or clarification on the Developer Mailing List
 
+
+# Checkout
+
+The following way to check out the code has been working for me
+
+1. checkout the Grease dev branch
+1. checkout the Seaside develop branch
+
+```st
+"load Grease from the checkout"
+Metacello new
+	baseline: 'Grease';
+	repository: 'filetree:///home/user/git/Grease/repository';
+	fetch;
+	load: 'Core Tests'.
+
+"lock Grease to the checkout"
+Metacello image
+  project: 'Grease';
+  lock.
+
+"load Seaside from the checkout"
+Metacello new
+	baseline: 'Seaside3';
+	repository: 'filetree:///home/user/git/Seaside/repository';
+	fetch;
+	load: 'CI'.
+```
+
 # Non-code contributions
 
 Besides code there are many other ways to help:
