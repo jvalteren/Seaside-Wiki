@@ -56,8 +56,12 @@ Seaside offers limited protection against DoS-attacks by offering the option to 
 
 In general Seaside has not been throughly reviewed to make sure it is not vulnerable to:
 
-  * hash collisions
-  * request headers (body size)
+ * hash collisions
+ * request headers (body size)
+
+Further information:
+ * https://en.wikipedia.org/wiki/Denial-of-service_attack
+ * https://www.owasp.org/index.php/Denial_of_Service
 
 ## Arbitrary Code Execution ##
 Seaside does not interpret or execute data sent by the client. However some Smalltalk dialects have what is essentially an implementation of `eval()` in the form of `Object class >> #readFrom:`. You have to review that you never pass user input to this method either directly or indirectly, eg. in the form of `Boolean class >> #readFrom:`
