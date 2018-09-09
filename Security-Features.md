@@ -35,6 +35,8 @@ Further information:
   * https://nealpoole.com/blog/2011/01/http-response-splitting-on-reddit-com/
 
 ## Malicious File Execution ##
+Since Seaside is not executing files or templates it is not vulnerable to malicious file execution.
+
 Further information:
   * https://www.owasp.org/index.php/Top_10_2007-A3
 
@@ -45,6 +47,10 @@ In addition to the protections against the attacks above Seaside offers the foll
 Seaside uses a [capability based](https://en.wikipedia.org/wiki/Capability-based_security) security model where only handles to actions are handed to the client. These handles are bound to a state snapshot (continuation).
 
 ## Strict Transport Security (STS) ##
+Seaside offers the built in `WAStrictTransportSecurityFilter` that adds a `Strict-Transport-Security` and redirects to the HTTPS version of the current URL.
+
+Further information:
+ * https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 
 ## DoS ##
   * hash collisions
