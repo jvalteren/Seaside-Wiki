@@ -1,7 +1,6 @@
 Unlike some low level frameworks Seaside offers built in protection against many common web application vulnerabilities.
 
 # Attacks #
-
 This is how Seaside protects you against common attacks against your web application.
 
 ## Session Fixation ##
@@ -53,6 +52,10 @@ Further information:
  * https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
 
 ## DoS ##
+Seaside offers limited protection against DoS-attacks by offering the option to limit the amount of session.
+
+In general Seaside has not been throughly reviewed to make sure it is not vulnerable to:
+
   * hash collisions
   * request headers (body size)
 
