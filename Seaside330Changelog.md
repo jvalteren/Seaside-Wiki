@@ -16,6 +16,15 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 
 # Breaking Changes #
 
+- When a session has expired no longer is #expiredRegistryKey being sent to the response generator. Instead #handleDefault: is not sent to the application. If you require the old behavior you should subclass `WAApplication` and override `#handleExpired` with the method below. See https://github.com/SeasideSt/Seaside/issues/916.
+```
+handleExpired: aRequestContext
+	
+	aRequestContext responseGenerator
+		expiredRegistryKey;
+		respond
+```
+
 # Deprecated Features #
  * `JSObject >> #timeout:` has been deprecated in favour of `JSObject >> #setTimeout:`. `JQAjaxSetup >> #timeout:` and `JQAjax >> #timeout:` have not been deprecated.
 
