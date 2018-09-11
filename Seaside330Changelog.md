@@ -21,6 +21,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - render phase continuation and `JSObject` now uses the script generator configured on the application
 - WAErrorHandler now sets the charSet
 - loading the `REST` Metacello group no longer loads Seaside-Component
+- expired sessions tracked with cookies should no result in an infinite redirect
 
 # Breaking Changes #
 
