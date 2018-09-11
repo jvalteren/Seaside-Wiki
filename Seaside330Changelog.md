@@ -35,6 +35,7 @@ handleExpired: aRequestContext
 		respond
 ```
 - #initializeMemorySettingsProfileSeaside has been removed
+- jQuery UI #zIndex: has been removed use the appendTo option instead https://jqueryui.com/upgrade-guide/1.12/#removed-zindex
 
 # Deprecated Features #
  * `JSObject >> #timeout:` has been deprecated in favour of `JSObject >> #setTimeout:`. `JQAjaxSetup >> #timeout:` and `JQAjax >> #timeout:` have not been deprecated.
