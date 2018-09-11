@@ -8,6 +8,8 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - a lot more HTML5 events are supported
 - HTML root supports directly passing a style sheet or Javascript as a String
 - Seaside now generates HTML-stlye boolean attributes instead of XML-style boolean attributes, `checked` instead of `checked="checked"`
+- `#initializeCache` can be sent to an application after changing the cache configuration for the changes to take effect #1005
+- the bundled Prototype.JS has been updated from 1.7.0 to 1.7.3 which fixes multi select lists 
 
 # Issues Resolved #
 [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
