@@ -12,6 +12,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - the bundled Prototype.JS has been updated from 1.7.0 to 1.7.3 which fixes multi select lists
 - the mime types for .sass and .scss are not supported
 - the Seaside-REST-Examples package has been added which contains examples on how to use Seaside REST
+- `WAEnterpriseAuberginesStrategy` has been added which tracks session similar to Tomcat/Java EE/Servlet with a "JSESSIONID" cookie and a "jsessionid" path parameter so that existing sticky session load balancers can be used.
 
 # Issues Resolved #
 [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
