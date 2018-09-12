@@ -145,3 +145,64 @@ James Robertson wrote: For VW, the preferred solution is Glorp, possibly using t
 Paolo Bonzini wrote: GNU Smalltalk has a database interface called DBI and supporting MySQL, PostgresSQL and SQLite. ROE is also available and integrated with all three backends.
 
 There is also support for Glorp, but it is not the latest version — no ActiveRecord, for example — and it only works with MySQL.
+
+# Sample code
+
+## Keep data in the image
+
+On the class side, add an instance variable:
+
+```smalltalk
+ADPerson class 
+    instanceVariableNames: 'persons'
+```
+
+Add an accessor
+
+```smalltalk
+ADPerson class>>persons 
+    ^ persons ifNil: [ persons := IdentitySet new ]
+```
+
+Make it possible to empty the dataset
+
+```smalltalk
+ADPerson class>>reset 
+    persons := nil
+```
+
+Create a new entity and add it to the dataset
+
+```smalltalk
+ADPerson class>>createAndAdd
+    | person |
+    person := ADPerson new.
+    person lastName: 'Jansen'.
+    ADPerson persons add: person
+```
+
+## Magritte-RDB.
+
+```smalltalk
+WSPersonalData realizeAll.
+WSPersonalData newRecord name: 'bob'; storeOnDB.
+{ a. b. c. } storeOnDB.
+```
+
+# Links
+
+- [Gemstone](http://seaside.gemtalksystems.com)
+- [SandstoneDB SandstoneDB source](http://www.squeaksource.com/SandstoneDb.html)
+- [Goods Goods backend for SandstoneDB Blog on backend](http://www.squeaksource.com/SDGoodsStore.html)
+- [Magma Magma mailing list](http://lists.squeakfoundation.org/pipermail/magma/)
+- [SIXX](http://www.mars.dti.ne.jp/~umejava/smalltalk/sixx/index.html)
+- [Tokyo Cabinet: a modern DBM](http://fallabs.com/kyotocabinet/)
+- [GLORP](https://sites.google.com/site/glorpsite/)
+- [SqueakDBX](https://wiki.squeak.org/squeak/6052)
+- [SOAPCore](http://www.mars.dti.ne.jp/~umejava/smalltalk/soapOpera/soapCore.html)
+- [MySQL driver](http://www.squeaksource.com/MySQL.html)
+- [Magrite-RDB](http://source.lukas-renggli.ch/magritteaddons/)
+- [Cloudfork SimpleDB Cloudfork blog](http://www.squeaksource.com/Cloudfork.html)
+- [VOSS](http://voss.logicarts.com)
+- [An older site on persistence (and other) issues with squeak](https://www.visoracle.com/squeak/faq/persistency_.html)
+- [The squeak wiki also has a page on persistence](https://wiki.squeak.org/squeak/512)
