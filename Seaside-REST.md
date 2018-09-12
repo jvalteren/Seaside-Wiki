@@ -32,21 +32,6 @@ getEmptyPath
     <get>
     <path: ''>
 ```
-```smalltalk
-getFirstPathElement: pathElement
-    "Will be executed if the request path is one element long, the path element will be bound
-    to the first method argument.
-    Eg. if the request is for '/index.html' the value of pathElement will be 'index.html'"
-    <get>
-```
-```smalltalk
-getFirstPathElement: firstPathElement secondPathElement: secondPathElement
-    "Will be executed if the request path is two elements long, the first path element will be bound
-    to the first method argument, the second path element will be bound to the second method argument.
-    Eg. if the request is for '/mail/index.html' the value of firstPathElement will be 'mail'
-    and the value of secondPathElement will be 'index.html'"
-    <get>
-```
 You can use the `Path:` pragma to get more control over when the method should be invoked.
 ```smalltalk
 getFrontPage: applicationName
