@@ -3,6 +3,7 @@
 Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Grease-1.3-Changelog)
 
 # Features #
+- Pharo 7 64bit support
 - Seaside-REST supports OPTIONS
 - Seaside-REST supports PATCH
 - a lot more HTML5 events are supported
