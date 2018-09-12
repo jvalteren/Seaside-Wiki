@@ -21,5 +21,6 @@ Some useful add-on libraries:
   * [TopFeeder](http://ss3.gemstone.com/ss/TopFeeder) rss reader library.
   * [SSpec](http://www.squeaksource.com/SSpec.html) BDD testing framework
   * [mock objects](http://www.squeaksource.com/Mocketry.html) framework with SSpec functionality
+  * [Willow](https://github.com/ba-st/Willow) is a Web Interaction Library that eases the burden of creating AJAX-based web applications.
 
 add your favourite library here...
