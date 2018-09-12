@@ -15,7 +15,7 @@ Some useful add-on libraries:
   * [mock objects](http://www.squeaksource.com/Mocketry.html) framework with SSpec functionality
   * [OAuth](http://blog.doit.st/2011/02/15/cloudforksso-openid-and-oauth-support-for-smalltalk/) support - [documentation](http://blog.doit.st/2011/02/15/cloudforksso-openid-and-oauth-support-for-smalltalk/) and [repository](http://www.squeaksource.com/Cloudfork/).
   * [PDF](http://www.seaside.st/documentation/pdfs) generation.
-  * [Persisting](http://www.seaside.st/documentation/persistence) data from your Seaside applications.
+  * [[Persistence|Persistence]] data from your Seaside applications.
   * [Pier 3](http://source.lukas-renggli.ch/pier3/) Version 3 of the powerful object-based content management system.
   * [Pier 3 addons](http://source.lukas-renggli.ch/pier3addons/) including Wysiwyg editing, Pier Admin - separate administration interface, Pier Admin setup - generate Pier sites from a set of templates
   * [PrismCodeDisplayer](https://github.com/DuneSt/PrismCodeDisplayer) is an implementation of Prism.js in Seaside
