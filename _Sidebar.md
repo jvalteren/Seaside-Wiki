@@ -30,6 +30,7 @@ Development
 
 Documentation
  * [[Security Features|Security-Features]]
+ * [[Securing Seaside Applications|Securing-Seaside-Applications]]
  * [[Seaside-REST]]
  * [[Add-On Libraries|Add-On-Libraries]]
  * [[Gettext]]
