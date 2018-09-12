@@ -33,6 +33,7 @@ Documentation
  * [[Securing Seaside Applications|Securing-Seaside-Applications]]
  * [[Seaside-REST]]
  * [[Add-On Libraries|Add-On-Libraries]]
+ * [[Persistence]|[Persistence]]
  * [[Gettext]]
  * [[FileLibrary]]
  * [[Long-Term Issues|Long-Term-Issues]]
