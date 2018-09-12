@@ -16,6 +16,10 @@ We also recommend you do not deploy any tests.
 
 # XSS and XSRF
 
-If you are using Seaside components and are not parsing URLs you should not have to do anything to protect yourself against XSS and XSRF.
+If you are using Seaside components and are not parsing URLs you should not have to do anything to protect yourself against XSS and XSRF. For more information see [[Security Features|Security-Features]]
 
 If you're using Seaside-REST from a browser/JavaScript context you need a way to protect yourself against XSRF
+
+# SQL Injection
+
+Refer to the document of your database access technology on how to protect yourself against SQL injection.
