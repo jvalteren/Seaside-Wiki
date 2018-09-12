@@ -83,3 +83,65 @@ Read speed is excellent: reading 5000 objects from the db can be done in 1 secon
 [ SDChildMock findAll ] timeToRun.
 ```
 and once they’re in cache, they are read in 0.1 seconds.
+
+## CouchDB
+
+Göran Krampe wrote: There is a Curl-plugin based Couch API on squeaksource (SS) that I have played with a bit. I have also written a so called "view server" in Squeak for CouchDB which means you can write map/reduce-functions to execute "in the server" in Squeak instead of in javascript. Mostly for fun - not really super useful! :)
+
+At my current customer I have written a C# API for CouchDB that we will release under some BSD license any day now - I will probably take that experience/design and translate it into improvements to the Couch API on SS. I am unsure if the Curl plugin is better/faster than a Squeak-only HTTP client approach.
+
+CouchDB itself is a refreshing experience, vibrant very helpful community, written in Erlang, HTTP API, JSON used as "object format", interesting map/reduce-pattern etc etc. Built for "crazy scaling through replication". Our first tests at my customer reveals great speed and very nice flexibility.
+
+## TokyoTyrant
+
+Göran Krampe wrote: TokyoTyrant is the networking server part used on top of Tokyo Cabinet - a very fast key/value-store written in C. I implemented the TokyoTyrant binary socket protocol recently and [blogged](http://goran.krampe.se/2013/07/16/rethinkdb-yet-another-nosql/) about it.
+
+Awesome speed, very interesting functionality - especially the table db part. I am using (or will be using) both of these from Squeak in different projects.
+
+## GLORP
+
+The GLORP website says: GLORP (Generic Lightweight Object-Relational Persistence) is a simple (well, relatively simple) framework for reading and writing Smalltalk objects from relational databases. Many of its design principles are inspired by The Object People’s TOPLink products, and we extend our thanks to The Object People for sponsoring this project and assisting with development. Most of the initial development was done at Camp Smalltalk 2000 in San Diego.
+
+## ROE
+
+ROE is used together with PostgreSQL. Avi Bryant wrote: Inspired somewhat by SchemeQL, I built a library that models the relational algebra in Squeak. The Relational Object Expressions library, or ROE, doesn’t do any mapping, but it does put the world of tables and rows on an equal footing with objects. Relational expressions (ie, queries) are first class objects, which can be easily passed around, composed, and introsopected. They respond to the Collection protocol, which means that from the outside they look and feel like an ordered collection of Tuple objects, but they’re lazy - composing them and filtering them is free, it’s only once you start iterating over the data that a single SQL query is built and sent out to the database.
+
+## Magma
+
+Chris Muller wrote: Magma is a scalable, fault-tolerant ODBMS for the Squeak platform with highly-transparent access. It may be the only option with high-availability built-in. Uniquely, Magma includes robust large collection support with RDBMS-like query power.
+
+A pure object system, Magma requires no external plugins or modules, therefore applications can be deployed to any machine without regard for any additional existing installed software libraries (just the Squeak VM).
+
+## SqueakDBX
+
+Mariano Martinez Peck wrote on squeak-dev: For those who don’t know what this is about, the aim of this project is to build an [OpenDBX](https://www.linuxnetworks.de/doc/index.php/OpenDBX) wrapper which will allow users to perform relational database operations (DDL, DML and SQL) through a truly open source library. Through this feature, the squeak community will hopefully be able to interact with major database engines, such as Oracle and SQL Server, besides those which are open source, like PostgreSQL, MySQL or Sqlite. Moreover, by integrating this with [GLORP](https://sites.google.com/site/glorpsite/), will allow us to generate a complete and open source solution to relational data base access.
+
+## SOA
+
+It is possible to use Seaside as a front-end for a SOA. Ramon Leon writes: As for the web services, I did it and use SoapCore to bind my Seaside front end to .net web services, but it’s been painful and in all honestly I wouldn’t recommend it, I did it out of necessity not want.
+
+## MySQL-driver
+
+Native driver (for Squeak) for connecting to MySql via TCP/IP
+
+## Magritte-RDB
+
+Maps magritte described objects to SQL tables, and queries into objects, currently only supports the MySQL driver, but OpenDBX support is planned. Magritte provides additional coercions for described data types. One to one associations are handled being retrieved with a Join.
+
+## Cloudfork-AWS
+
+Cloudfork AWS is an open source project that provides easy access from Smalltalk to the Amazon Web Services. One of these services is SimpleDB, a powerful and extremely scalable database engine with a simple REST based API. It is possible to use the API directly but it is also possible to use a higer level API. Cloudfork-ActiveItem provides an ActiveRecord like interface to SimpleDB and Cloudfork-SimpleDB-Magritte makes it easy to store magritte described objects in SimpleDB.
+
+## VOSS
+
+The VOSS open source virtual object storage system extends Smalltalk with integrated database management, providing transparent multi-user access and transaction processing of persistent, versioned, Smalltalk objects directly accessible by normal programming, with efficient persistent Btree collection classes, including the multi-key/multi-value/key-set VirtualDictionarySet for aggregation and query-building. VOSS requires VA Smalltalk and runs on Windows 2000, XP, or Vista.
+
+## VisualWorks
+
+James Robertson wrote: For VW, the preferred solution is Glorp, possibly using the ActiveRecord additions we’ve added for Web Velocity (which is built on top of Seaside). [Glorp](https://sites.google.com/site/glorpsite/) is an open source Object Relational mapping framework for Smalltalk - it’s portable across VisualWorks, Squeak, and VA Smalltalk (in the latter case, Instantiations has said that they intend to make sure it works in an upcoming release). It may be available for other Smalltalk implementations as well, but I’m less familiar with dialects beyond the three I mentioned. Glorp is conceptually related to the old Toplink Smalltalk ORM, but is a completely new implementation, originally created by Alan Knight.
+
+## GNU Smalltalk
+
+Paolo Bonzini wrote: GNU Smalltalk has a database interface called DBI and supporting MySQL, PostgresSQL and SQLite. ROE is also available and integrated with all three backends.
+
+There is also support for Glorp, but it is not the latest version — no ActiveRecord, for example — and it only works with MySQL.
