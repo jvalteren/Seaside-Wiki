@@ -11,7 +11,7 @@ Follow the best practices for configuring that server and TLS.
 
 # Development Tools
 
-We strongly recommend you do not deploy any development tools. This includes the Seaside-Development and Seaside-Welcome packages. If possible we recommend you remove the compiler from your production images.
+We strongly recommend you do not deploy any development tools. This includes the Seaside-Development and Seaside-Welcome packages. We also recommend against deploying Seaside-Tools-Web, if you need them make sure they are protected by strong passwords or better. If possible we recommend you remove the compiler from your production images.
 We also recommend you do not deploy any tests.
 
 # XSS and XSRF
