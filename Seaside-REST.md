@@ -22,9 +22,15 @@ simplePost
 ## Request URL path ##
 You can mark method to be executed only on a certain request path and bind it to method arguments.
 ```smalltalk
+methodName
+    "will be executed if the request path is 'methodName'"
+    <get>
+```
+```smalltalk
 getEmptyPath
     "will be executed if the request path is empty"
     <get>
+    <path: ''>
 ```
 ```smalltalk
 getFirstPathElement: pathElement
