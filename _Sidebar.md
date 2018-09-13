@@ -32,6 +32,7 @@ Documentation
  * [[Embedding Subcomponents|Embedding-Subcomponents]]
  * [[Maintaining State|Maintaining-State]]
  * [[Generating HTML|Generating-HTML]]
+ * [[CSS and Javascript|CSS-and-Javascript]]
  * [[Links, Forms and Callbacks|Links,-Forms-and-Callbacks]]
  * [[Security Features|Security-Features]]
  * [[Securing Seaside Applications|Securing-Seaside-Applications]]
