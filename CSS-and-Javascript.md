@@ -1,0 +1,5 @@
+The easiest way to include CSS and Javascript in your application is to override the `#style` and `#script` methods, respectively, of your components. These should return static (not generated) string literals containing snippets of CSS or Javascript that will be included as external resources when the page is generated.
+
+For more flexibility, however, you can also create a subclass of `WAFileLibrary`. Put your JavaScript code in methods with a name ending with "Js" and your CSS in methods with a name ending on "Css". These are expected to consist solely a returned string literal. When configuring an application, you can add any libraries that have relevant scripts or styles, and all of the code in these libraries will be linked in to every page of the application. By default, applications include WAStandardFiles; see this class for examples.
+
+For production we recommend using external files served through a front end web server.
