@@ -4,13 +4,13 @@ There are different ways of generating and serving PDFs with Seaside. This shoul
 
 # What kind of possibilities are there?
 
-SPDF, a low-level, not very complete smalltalk library
-LibHaru, a low-level, more complete c library
-pdflatex, a complex typesetting system based on LaTeX
-Apache fop, an xml-based layouting engine
-Rome/Cairo, a graphical library with pdf export
-PDFReactor, a xhtml/css-to-PDF rendering engine (commercial)
-Artefact, a low-level (but growing) smalltalk library (Pharo)
+- SPDF, a low-level, not very complete smalltalk library
+- LibHaru, a low-level, more complete c library
+- pdflatex, a complex typesetting system based on LaTeX
+- Apache fop, an xml-based layouting engine
+- Rome/Cairo, a graphical library with pdf export
+- PDFReactor, a xhtml/css-to-PDF rendering engine (commercial)
+- Artefact, a low-level (but growing) smalltalk library (Pharo)
 
 # What kind of document do you want to create?
 
@@ -18,68 +18,68 @@ Artefact, a low-level (but growing) smalltalk library (Pharo)
 
 For longer documents, you probably want to be able to automatically wrap longer lines of dynamic text.
 
-SPDF doesn’t provide this function.
-LibHaru doesn’t provide this function.
-LaTeX uses an advanced line-breaking algorithm.
-Apache fop automatically breaks lines.
-Cairo has Pango, which provides line-breaking.
-Plain Rome doesn’t provide line breaking.
-PDFReactor is quite capable of laying out the content based on provided stylesheets and page configuration (commercial license required, demo available).
+- SPDF doesn’t provide this function.
+- LibHaru doesn’t provide this function.
+- LaTeX uses an advanced line-breaking algorithm.
+- Apache fop automatically breaks lines.
+- Cairo has Pango, which provides line-breaking.
+- Plain Rome doesn’t provide line breaking.
+- PDFReactor is quite capable of laying out the content based on provided stylesheets and page configuration (commercial license required, demo available).
 
 ## Do you need paragraph breaking over multiple pages?
 
-SPDF doesn’t provide this function.
-LibHaru doesn’t provide this function.
-LaTeX uses an page-breaking algorithm, taking in account widows and orphans.
-Apache fop automatically breaks paragraphs over multiple pages.
-Cairo itself has no concept of pages.
-Pango provides the basics for breaking text over multiple boxes, but doesn’t have the notion of pages.
-PDFReactor does break paragraphs over multiple pages.
+- SPDF doesn’t provide this function.
+- LibHaru doesn’t provide this function.
+- LaTeX uses an page-breaking algorithm, taking in account widows and orphans.
+- Apache fop automatically breaks paragraphs over multiple pages.
+- Cairo itself has no concept of pages.
+- Pango provides the basics for breaking text over multiple boxes, but doesn’t have the notion of pages.
+- PDFReactor does break paragraphs over multiple pages.
 
 ## Do you need absolute positioning of graphical elements?
 
-LaTeX and FOP are difficult to use with absolute positioning. They insist on using their own layouting engine. This can be an advantage.
-SPDF provides absolute positioning of elements.
+- LaTeX and FOP are difficult to use with absolute positioning. They insist on using their own layouting engine. This can be an advantage.
+- SPDF provides absolute positioning of elements.
 
 ## Do you need international font support?
 
-LaTeX is good at that, FOP is completely unicode based.
-Cairo is unicode based, Pango is built to handle difficult support things like right-to left mixed with left-to right.
-SPDF uses iso-latin1.
-PDFReactor fully supports unicode rendering.
+- LaTeX is good at that, FOP is completely unicode based.
+- Cairo is unicode based, Pango is built to handle difficult support things like right-to left mixed with left-to right.
+- SPDF uses iso-latin1.
+- PDFReactor fully supports unicode rendering.
 
 ## Do you need images?
 
-SPDF only works with monochrome tiffs.
-LibHaru can use different kinds of raster images.
-LaTeX can include different kind of raster images.
-Apache fop can use diferent kind of raster images and SVG.
-Cairo can use different kind of raster images.
-PDFReactor will render raster images as well as SVG content for high quality print output.
+- SPDF only works with monochrome tiffs.
+- LibHaru can use different kinds of raster images.
+- LaTeX can include different kind of raster images.
+- Apache fop can use diferent kind of raster images and SVG.
+- Cairo can use different kind of raster images.
+- PDFReactor will render raster images as well as SVG content for high quality print output.
 
 ## Do you want to use other fonts than the standard PDF fonts?
 
 PDF has build-in support for 13 fonts, but allows other ones to be included.
 
-It is difficult to integrate new fonts into LaTeX, but possible. LaTeX has the best support for mathematics. LaTeX has an ascii encoding of some characters.
-SPDF can only handle the standard fonts.
-HaruPDF can load truetype and postscript fonts.
-Cairo with FreeType can use (nearly) all platform fonts.
-PDFReactor can use all platform fonts; TrueType and OpenType fonts are supported.
+- It is difficult to integrate new fonts into LaTeX, but possible. LaTeX has the best support for mathematics. LaTeX has an ascii encoding of some characters.
+- SPDF can only handle the standard fonts.
+- HaruPDF can load truetype and postscript fonts.
+- Cairo with FreeType can use (nearly) all platform fonts.
+- PDFReactor can use all platform fonts; TrueType and OpenType fonts are supported.
 
 ## Do you want to create interactive content?
 
-With LaTeX you can use the hyperref package to create links and forms.
-SPDF doesn’t have links.
-With PDFReactor you can ember flash, hyperlinks, bookmarks, barcodes, form elements etc.
+- With LaTeX you can use the hyperref package to create links and forms.
+- SPDF doesn’t have links.
+- With PDFReactor you can ember flash, hyperlinks, bookmarks, barcodes, form elements etc.
 
 # When do you want to generate your PDFs?
 
-SPDF can streamfiles directly to the socket, so that people can start to download and read documents while they are generated.
-HaruPDF is integrated and fast.
-LaTeX and FOP are rather slow when generating PDF. For complicated documents it is a good idea to cache created files.
-Cairo is integrated and fast.
-PDFReactor is a webservice which will return PDF bytes in response to a request feeding it xhtml/css.
+- SPDF can streamfiles directly to the socket, so that people can start to download and read documents while they are generated.
+- HaruPDF is integrated and fast.
+- LaTeX and FOP are rather slow when generating PDF. For complicated documents it is a good idea to cache created files.
+- Cairo is integrated and fast.
+- PDFReactor is a webservice which will return PDF bytes in response to a request feeding it xhtml/css.
 Calling external programs is done through FFI (for dll’s) or OSProcess (for executables).
 
 # How do you want to serve PDFs?
