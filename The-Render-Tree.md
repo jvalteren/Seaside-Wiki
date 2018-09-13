@@ -30,7 +30,7 @@ root --------> A <-------------------
    B
 ```
 
-The root has two children, A and B. A has one child, C, and B has none. A also has three decorations, x, y, and z. The traversal will be in this order: (root, (x, y, z, A, ©), (B)). The most important thing to note about this is that A’s decorations get visited **before** A itself does. Also note that, as indicated by the parentheses, A and C are both "controlled" by the x-y-z decorations, whereas the root and B are not.
+The root has two children, A and B. A has one child, C, and B has none. A also has three decorations, x, y, and z. The traversal will be in this order: (root, (x, y, z, A, C), (B)). The most important thing to note about this is that A’s decorations get visited **before** A itself does. Also note that, as indicated by the parentheses, A and C are both "controlled" by the x-y-z decorations, whereas the root and B are not.
 
 The second way the tree is extended is a special case of the first, which is through delegation. When a component is sent `#call:` with another component, it adds a special WADelegation decoration with the new component referenced as the "delegate". `WADelegation` is unusual in that it adjusts the tree traversal to follow the "delegate" pointer instead of the "next" pointer. This means that, for as long as that decoration is present, the component being decorated and all of its children will be obscured by the delegate - they won’t appear in any tree traversals. When the delegate is sent #answer:, the Delegation decoration is removed and the original component becomes visible again.
 
