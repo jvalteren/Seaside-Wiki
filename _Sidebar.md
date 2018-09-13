@@ -43,6 +43,7 @@ Documentation
  * [[Persistence|Persistence]]
  * [[Gettext]]
  * [[FileLibrary]]
+ * [[The Render Tree|The-Render-Tree]]
  * [[Long-Term Issues|Long-Term-Issues]]
  * [[Big Issues|Big-Issues]]
 
