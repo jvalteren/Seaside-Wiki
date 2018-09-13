@@ -26,7 +26,7 @@ It will generate a series of links, labelled from 1 to 10. Because the action bl
 
 # Forms
 
-You can use the #form method to generate a form. Form inputs work similarly to links: they use blocks, rather than names, to react to user input. One of the simplest form input tag objects is WATextInputTag. To create a WATextInputTag you call #textInput and can set the resulting text input tag’s callback using #callback:. For example, you might set up a form that looked like this:
+You can use the `#form` method to generate a form. Form inputs work similarly to links: they use blocks, rather than names, to react to user input. One of the simplest form input tag objects is `WATextInputTag`. To create a `WATextInputTag` you call `#textInput` and can set the resulting text input tag’s callback using `#callback:`. For example, you might set up a form that looked like this:
 
 ```smalltalk
 renderContentOn: html
@@ -39,9 +39,9 @@ renderContentOn: html
       html submitButton ]
 ```
 
-The text input will show the current value of person name, and when the submit button is pressed whatever text the user has entered will be sent to #name:.
+The text input will show the current value of person name, and when the submit button is pressed whatever text the user has entered will be sent to `#name:`.
 
-Objects who subclass WAFormInputTag are all intended to be used inside a form. For example, #textArea returns an instance of WATextAreaTag, #checkbox returns an instance of WHCheckboxTax that expects a boolean value, and #select returns an instance of WASelectTag.
+Objects who subclass `WAFormInputTag` are all intended to be used inside a form. For example, `#textArea` returns an instance of `WATextAreaTag`, `#checkbox` returns an instance of `WACheckboxTag` that expects a boolean value, and #select returns an instance of `WASelectTag`.
 
 All of these also can use a target/selector form instead of value/callback. The example above could also be written like this:
 
@@ -82,4 +82,4 @@ renderContentOn: html
       html submitButton ]
 ```
 
-For more examples look at `#renderContentOn:` in the WAInputElementContainer class.
+For more examples look at `#renderContentOn:` in the `WAInputElementContainer` class.
