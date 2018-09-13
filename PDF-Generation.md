@@ -229,9 +229,9 @@ in Seaside 3.0 the way to create a response changed:
 
 # Where do you find all this software?
 
-- SPDF: SPDF
-- LibHARU: HPDF, LibHARU
-- LaTeX: MikTeX LaTeX, TeX Live LaTeX
-- Cairo: Sophie, Rome, Cairo, Pango
-- Apache FOP
-- PDFReactor
+- SPDF: [SPDF](http://map.squeak.org/package/d8fd5e1a-2bb7-4c99-a77e-f945dfce01eb)
+- LibHARU: [HPDF](http://www.squeaksource.com/HPDF.html), [LibHARU](http://libharu.sourceforge.net)
+- LaTeX: [MikTeX LaTeX](https://miktex.org), [TeX Live LaTeX](http://tug.org/texlive/)
+- Cairo: [Rome](http://www.squeaksource.com/Rome.html), [Cairo](https://www.cairographics.org), [Pango](https://www.pango.org)
+- [Apache FOP](https://xmlgraphics.apache.org/fop/)
+- [PDFReactor](https://www.pdfreactor.com)
