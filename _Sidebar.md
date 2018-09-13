@@ -29,6 +29,7 @@ Development
  * [[Package Naming|Package-Naming]]
 
 Documentation
+ * [[Embedding Subcomponents|Embedding-Subcomponents]]
  * [[Security Features|Security-Features]]
  * [[Securing Seaside Applications|Securing-Seaside-Applications]]
  * [[Seaside-REST]]
