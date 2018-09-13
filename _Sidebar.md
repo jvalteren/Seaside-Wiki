@@ -44,6 +44,7 @@ Documentation
  * [[Gettext]]
  * [[FileLibrary]]
  * [[The Render Tree|The-Render-Tree]]
+ * [[PDF Generation|PDF-Generation]]
  * [[Long-Term Issues|Long-Term-Issues]]
  * [[Big Issues|Big-Issues]]
 
