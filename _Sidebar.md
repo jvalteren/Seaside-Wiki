@@ -34,6 +34,7 @@ Documentation
  * [[Generating HTML|Generating-HTML]]
  * [[CSS and Javascript|CSS-and-Javascript]]
  * [[Links, Forms and Callbacks|Links,-Forms-and-Callbacks]]
+ * [[Naming URLs|Naming-URLs]]
  * [[Security Features|Security-Features]]
  * [[Securing Seaside Applications|Securing-Seaside-Applications]]
  * [[Seaside-REST]]
