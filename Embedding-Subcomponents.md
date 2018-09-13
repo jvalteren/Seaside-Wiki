@@ -54,7 +54,7 @@ children
 
 If a subcomponent makes a `#call:` to another component, that component will appear in place of the subcomponent. In the first example, if myCounter made a `#call:` to DateSelector, that DateSelector would appear in the context of the counter’s parent, with the ’My Counter’ heading above it.
 
-Since a subcomponent has not been `#call:`’d, in general `#answer:` is a no-op. However, the parent may attach an #onAnswer: block to the subcomponent to be notified if it sends `#answer:`. This allows one component to be used both from `#call:` and through embedding. For example:
+Since a subcomponent has not been `#call:`’d, in general `#answer:` is a no-op. However, the parent may attach an `#onAnswer:` block to the subcomponent to be notified if it sends `#answer:`. This allows one component to be used both from `#call:` and through embedding. For example:
 
 ```smalltalk
 initialize
