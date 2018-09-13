@@ -88,8 +88,9 @@ PDF files can be generated and served through Seaside, but that consumes a lot o
 
 # Which solution works on what platform?
 
-Squeak: SPDF, libharu, pdflatex, fop, cairo, pdfreactor
-VW: SPDF, cairo, pdfreactor
+- Squeak: SPDF, libharu, pdflatex, fop, cairo, pdfreactor
+- VW: SPDF, cairo, pdfreactor
+
 PDFReactor can be used from any dialect with support for HTTP requests, but it is especially trivial in dialects capable of generating a web interface from WSDL.
 
 # Speed and Scalability
@@ -102,27 +103,32 @@ Large documents should be generated, cached and served externally.
 
 The script creates a pdf ’hello world’ document named spdf02.pdf.
 
+```smalltalk
 | myStream pdfWriter |
 myStream := (self testFileNamed: 'spdf02.pdf') writeStream.
 pdfWriter := PDFWriter on: myStream.
 pdfWriter compressionOff.
 pdfWriter write: 'Hello, World (From PDFTester)'.
 pdfWriter close.
-myStream close.
+myStream close
+```
 
 ## LibHARU
 
 The script creates a pdf document in the squeak directory containing a single page with a 2 by 2 inch image 1 inch from the lower left corner.
 
+```smalltalk
 | document page image |
 document := PDFDocument new.
 page := document addPage.
 image := document loadPNGImage: 'Image.png'.
 page drawImage: image rectangle: (Rectangle origin: 72@72 extent: 144@144).
 document saveToFile: 'documentWithImage.pdf'
+```
 
 ## LaTeX
 
+```smalltalk
 generateLaTeX: aFileName
         | aFile |
         aFile := CrLfFileStream fileNamed: aFileName, '.tex'.
@@ -131,55 +137,71 @@ generateLaTeX: aFileName
         self usecases do: [:each| self printUseCase: each on: aFile].
         self endOn: aFile.
         aFile close
+
 startOn: aStream
         aStream nextPutAll:'\documentclass[12pt,a4paper]{article}'; cr.
         aStream nextPutAll:'\usepackage[english,dutch]{babel}'; cr.
         aStream nextPutAll:'\begin{document}'; cr.
         aStream nextPutAll: '\begin{tabular}{|l|l|}'; cr.
-        aStream nextPutAll: '\hline ';cr.
+        aStream nextPutAll: '\hline ';cr
+
 endOn: aStream
         aStream nextPutAll:'\end{tabular}'; cr.
         aStream cr; cr.
         aStream nextPutAll: '\end{document}'; cr
+
 printUseCase: aUseCase on: aStream
-        aStream nextPutAll: (aUseCase usecaseName) ,' & ',(aUseCase usecaseDescription), ' \\ hline '; cr.
+        aStream nextPutAll: (aUseCase usecaseName) ,' & ',(aUseCase usecaseDescription), ' \\ hline '; cr
+```
+
 You can use that script to write the file usecase.tex to the same directory the squeak image is in (that is not secure). Also think about the situation where multiple people try to run this at the same time.
 
+```smalltalk
 runLaTeXOnUsecase
         OSProcess waitForCommand:'pdflatex usecase.tex'
+```
+
 Generates usecase.pdf in the same directory on Unix.
 
 ## PDFReactor
 
+```smalltalk
 self
   downloadBytes: (AccountingReportComponent on: self statement) asPDF
   mime: 'application/pdf'
-  filename: 'accountingreport.pdf'.
+  filename: 'accountingreport.pdf'
+```
+
 where,
 
+```smalltalk
 asPDF
   | handler response |
   handler := WARenderContinuation root: (PDFRoot for: self).
   response := WAResponse new.
   handler context: (WARenderingContext new session: self session; actionUrl: WAUrl new; yourself).
   handler processRendering: response.
-  ^(PDFReactorClient default convertXHTML: response contents contents) getPDF.
+  ^ (PDFReactorClient default convertXHTML: response contents contents) getPDF
+```
+
 in Seaside 3.0, this might look like:
 
+```smalltalk
 Component>>asPDF
 | xhtml |
-xhtml := (RenderCanvas builder)
+xhtml := WAHtmlCanvas builder
 		fullDocument: true;
-		documentClass: WAHtmlDocument;
 		rootBlock: 
 			[:root |
-			root beXhtml10Strict.
 			root style add: (Styles default documentForFile: 'print.css').
 			root style add: 'svg {-ro-replacedelement: ==''com.realobjects.xml.formatters.SVGFormatter'';}'];
 		render: [:html | html render: self].
 ^(PDFreactorClient default convertXHTML: xhtml) bytes
+```
+
 uploading the file from squeak (should probably be done from Apache) in a WAComponent
 
+```smalltalk
 renderContentOn: html
   html submitButton on: #export of:self
 export
@@ -191,15 +213,19 @@ export
   self session returnResponse: (WAResponse
     document: contents
     mimeType: 'application/pdf'
-    fileName: 'usecase.pdf').
+    fileName: 'usecase.pdf')
+```
+
 in Seaside 3.0 the way to create a response changed:
 
+```smalltalk
     self requestContext respond: [ :response |
         response
             contentType:'application/pdf'
             attachmentWithFileName:'usecase.pdf';
             binary;
             nextPutAll: thePdf
+```
 
 # Where do you find all this software?
 
