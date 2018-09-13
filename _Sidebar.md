@@ -30,6 +30,7 @@ Development
 
 Documentation
  * [[Embedding Subcomponents|Embedding-Subcomponents]]
+ * [[Maintaining State|Maintaining-State]]
  * [[Security Features|Security-Features]]
  * [[Securing Seaside Applications|Securing-Seaside-Applications]]
  * [[Seaside-REST]]
