@@ -6,7 +6,7 @@ We recommend you use the default `WAQueryFieldHandlerTrackingStrategy` plus a (s
 
 # TLS
 
-We recommend you use TLS and a front end web server like [Apache HTTP](https://httpd.apache.org) or [nginx](https://nginx.org/en/) that does TLS termination. From a performance point of view we also recommend you serve static resources through the front end web server.
+We recommend you use TLS and a front end web server like [Apache HTTP](https://httpd.apache.org) or [nginx](https://nginx.org/en/) that does TLS termination. From a performance point of view we also recommend you serve static resources through the front end web server. If the front end web server is on the same server bind only the loopback interface if possible.
 Follow the best practices for configuring that server and TLS.
 
 # Development Tools
