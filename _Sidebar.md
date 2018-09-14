@@ -35,6 +35,7 @@ Documentation
  * [[CSS and Javascript|CSS-and-Javascript]]
  * [[Debugging Seaside Applications|Debugging-Seaside-Applications]]
  * [[Links, Forms and Callbacks|Links,-Forms-and-Callbacks]]
+ * [[Development Tools|Development-Tools]]
  * [[Call and Answer|Call-and-Answer]]
  * [[Naming URLs|Naming-URLs]]
  * [[Security Features|Security-Features]]
