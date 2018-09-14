@@ -15,7 +15,8 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - `WAEnterpriseAuberginesStrategy` has been added which tracks session similar to Tomcat/Java EE/Servlet with a "JSESSIONID" cookie and a "jsessionid" path parameter so that existing sticky session load balancers can be used
 - a mapping for Prototype's `PeriodicalExecuter` has been added
 - the bundled Prototype JavaScript library has been updated from 1.7.0 to 1.7.3 which fixes multi select lists
-- #noAutocomplete is also be understood by inputs
+- `#noAutocomplete` is also be understood by inputs
+- some of the icons of the development tools have been updated to vector graphics so that they should look better on high-DPI screens
 
 # Issues Resolved #
 [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
