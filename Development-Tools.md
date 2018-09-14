@@ -29,7 +29,7 @@ A toolbar that is shown at the bottom of the web-application during the developm
 
 There are specialized refactoring and code critics tools available for Seaside. Check out the following articles by Lukas Renggli:
 
-OmniBrowser Refactoring Tools
-New Refactorings
-Code Critics in OB
-Slime
+- [OmniBrowser Refactoring Tools](http://www.lukas-renggli.ch/blog/ob-rb-1)
+- [New Refactorings](http://www.lukas-renggli.ch/blog/ob-rb-2)
+- [Code Critics in OB](http://www.lukas-renggli.ch/blog/ob-rb-3)
+- [Slime](http://www.lukas-renggli.ch/blog/slime)
