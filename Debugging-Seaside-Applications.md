@@ -6,4 +6,4 @@ When an unhandled exception occurs (see figure below), a stack trace is shown in
 
 This feature makes debugging web applications very powerful: there is no manual recompilation and restarting of the web server required. The developer is put right back into the questionable page where he is able to see if he fixed the error properly and is able to continue the testing session.
 
-[debug_loop.png]
+[[debug_loop.png]]
