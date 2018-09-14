@@ -1,0 +1,12 @@
+_**See also**: [Seaside Configuration Management](http://www.shaffer-consulting.com/david/Seaside/Configurations/index.html) by C. David Shaffer_
+
+**This page is outdated and needs to be updated.**
+
+A configuration is an instance of a concrete subclass of `WAConfiguration`. A configuration defines a set of attributes (which describe a value type, range of values, etc), a set of values for those attributes, and a set of ancestor configurations. Depending on the class of configuration, these may all be specified programmatically, or may be set manually by the user.
+
+Attribute values are treated similarly to method inheritance: if a configuration provides a value for a particular attribute, that value will override any values provided by its ancestors. If it provides no value, the lookup continues up the ancestor chain. There’s a well-defined order (similar to that used in Dylan) when traversing complex multiple-inheritance trees.
+
+There are two levels of configuration currently used by Seaside: SystemConfiguration, and UserConfiguration.
+
+- The purpose of a SystemConfiguration is to define a particular set of attributes and global default values for them. SystemConfigurations are specified purely programatically: they must implement `#ancestors` to return an array of ancestor configurations and `#attributes` to return an array of attribute values. They may also implement methods corresponding to attribute names to provide default values (although they do not have to). SystemConfigurations are singletons - each subclass has a unique instance, accessible through the #instance method on the class side. `WAAuthConfiguration` is a good example of a system configuration: it provides the `#login` and `#password` attributes. Adding `WAAuthConfiguration` as an ancestor of your application’s configuration will immediately provide it with simple HTTP Basic Authentication.
+- The UserConfiguration is completely user specified: its values are specified at runtime and can also have ancestors added and removed by the user. Each application has an instance of UserConfiguration. You can also add named user configurations that aren’t associated with a particular application, that can be reused (by adding them as ancestors) across several apps.
