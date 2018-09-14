@@ -29,6 +29,7 @@ Development
  * [[Package Naming|Package-Naming]]
 
 Documentation
+ * [[Configuration and Preferences|Configuration-and-Preferences]]
  * [[Embedding Subcomponents|Embedding-Subcomponents]]
  * [[Maintaining State|Maintaining-State]]
  * [[Generating HTML|Generating-HTML]]
