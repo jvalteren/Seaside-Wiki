@@ -8,6 +8,6 @@
 
   * [[Modal session management|Call-and-Answer]].  What if you could express a complex, multi-page workflow in a single method?  Unlike servlet models which require a separate handler for each page or request, Seaside models an entire user session as a continuous piece of code, with natural, linear control flow.  In Seaside, components can call and return to each other like subroutines; string a few of those calls together in a method, just as if you were using console I/O or opening modal dialog boxes, and you have a workflow. And yes, the back button will still work.
 
-Seaside also has good support for [[CSS and Javascript|CSS-and-Javascript]], excellent [[web-based development tools|Development-Tools]] and [[debugging support|Debugging-Seaside-Applications]], a rich [configuration and preferences](http://www.seaside.st/documentation/configuration-and-preferences) framework, and more.
+Seaside also has good support for [[CSS and Javascript|CSS-and-Javascript]], excellent [[web-based development tools|Development-Tools]] and [[debugging support|Debugging-Seaside-Applications]], a rich [[configuration and preferences|Configuration-and-Preferences]] framework, and more.
 
 If you would like to contribute, please visit [Seaside's contributors page](https://github.com/SeasideSt/Seaside/blob/master/CONTRIBUTING.md).
