@@ -40,6 +40,7 @@ handleExpired: aRequestContext
 ```
 - `#initializeMemorySettingsProfileSeaside` has been removed
 - jQuery UI `#zIndex:` has been removed use the appendTo option instead https://jqueryui.com/upgrade-guide/1.12/#removed-zindex
+- the "XHTML" validation tool int the development toolbar has been removed, it is unlikely this ever worked
 
 # Deprecated Features #
  * `JSObject >> #timeout:` has been deprecated in favour of `JSObject >> #setTimeout:`. `JQAjaxSetup >> #timeout:` and `JQAjax >> #timeout:` have not been deprecated.
