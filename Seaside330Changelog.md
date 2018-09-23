@@ -44,5 +44,6 @@ handleExpired: aRequestContext
 
 # Deprecated Features #
  * `JSObject >> #timeout:` has been deprecated in favour of `JSObject >> #setTimeout:`. `JQAjaxSetup >> #timeout:` and `JQAjax >> #timeout:` have not been deprecated.
+ * `WAHtmlRoot` `#beXhtml10Strict`, `#beXhtml10Transitional` and `#beXhtml11` have been deprecated in favor of `#beHtml5`.
 
 # Upgrading #
