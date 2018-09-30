@@ -17,6 +17,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - the bundled Prototype JavaScript library has been updated from 1.7.0 to 1.7.3 which fixes multi select lists
 - `#noAutocomplete` is also be understood by inputs
 - some of the icons of the development tools have been updated to vector graphics so that they should look better on high-DPI screens
+- SameSite Strict is used for session cookies
 
 # Issues Resolved #
 [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
@@ -41,9 +42,10 @@ handleExpired: aRequestContext
 - `#initializeMemorySettingsProfileSeaside` has been removed
 - jQuery UI `#zIndex:` has been removed use the appendTo option instead https://jqueryui.com/upgrade-guide/1.12/#removed-zindex
 - the "XHTML" validation tool int the development toolbar has been removed, it is unlikely this ever worked
+- SameSite Strict is used for session cookies, that means requests from other pages, including redirects, will no longer get the session cookie. If you rely on the old behavior we implementing you own session tracking strategy.
 
 # Deprecated Features #
- * `JSObject >> #timeout:` has been deprecated in favour of `JSObject >> #setTimeout:`. `JQAjaxSetup >> #timeout:` and `JQAjax >> #timeout:` have not been deprecated.
- * `WAHtmlRoot` `#beXhtml10Strict`, `#beXhtml10Transitional` and `#beXhtml11` have been deprecated in favor of `#beHtml5`.
+- `JSObject >> #timeout:` has been deprecated in favour of `JSObject >> #setTimeout:`. `JQAjaxSetup >> #timeout:` and `JQAjax >> #timeout:` have not been deprecated.
+- `WAHtmlRoot` `#beXhtml10Strict`, `#beXhtml10Transitional` and `#beXhtml11` have been deprecated in favor of `#beHtml5`.
 
 # Upgrading #
