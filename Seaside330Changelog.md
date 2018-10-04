@@ -18,6 +18,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - `#noAutocomplete` is also be understood by inputs
 - some of the icons of the development tools have been updated to vector graphics so that they should look better on high-DPI screens
 - SameSite Strict is used for session cookies
+- jQuery binding was updated to 3.3.1 (see https://jquery.com/upgrade-guide/ for how to upgrade)
 
 # Issues Resolved #
 [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
