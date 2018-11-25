@@ -8,7 +8,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - Seaside-REST supports PATCH
 - a lot more HTML5 events are supported
 - HTML root supports directly passing a style sheet or Javascript as a String
-- Seaside now generates HTML-stlye boolean attributes instead of XML-style boolean attributes, `checked` instead of `checked="checked"`
+- Seaside now generates HTML-style boolean attributes instead of XML-style boolean attributes, `checked` instead of `checked="checked"`
 - `#initializeCache` can be sent to an application after changing the cache configuration for the changes to take effect
 - the MIME types for .sass and .scss are now supported
 - the Seaside-REST-Examples package has been added which contains examples on how to use Seaside REST
@@ -19,6 +19,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 - some of the icons of the development tools have been updated to vector graphics so that they should look better on high-DPI screens
 - SameSite Strict is used for session cookies
 - jQuery binding was updated to 3.3.1 (see https://jquery.com/upgrade-guide/ for how to upgrade)
+- jQuery-UI binding was updated to 1.12.1 (see https://jqueryui.com/upgrade-guide/1.12/ for how to upgrade)
 
 # Issues Resolved #
 [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
@@ -31,7 +32,7 @@ Seaside 3.3 includes [Grease 1.3](https://github.com/SeasideSt/Grease/wiki/Greas
 
 # Breaking Changes #
 
-- Removed GemStone 2.4 support
+- Removed support for Pharo 1,2,3 and GemStone 2.4 (these were probably broken in 3.2 already)
 - When a session has expired no longer is `#expiredRegistryKey` being sent to the response generator. Instead `#handleDefault:` is not sent to the application. If you require the old behavior you should subclass `WAApplication` and override `#handleExpired` with the method below. See https://github.com/SeasideSt/Seaside/issues/916.
 ```smalltalk
 handleExpired: aRequestContext
