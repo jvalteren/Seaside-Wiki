@@ -54,4 +54,4 @@ handleExpired: aRequestContext
 
 # Upgrading #
 
-No know issues upgrading from 3.2.x
+No known issues upgrading from 3.2.x
