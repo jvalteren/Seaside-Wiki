@@ -20,7 +20,7 @@ Seaside 3.3 includes [Grease 1.4](https://github.com/SeasideSt/Grease/wiki/Greas
 - SameSite Strict is used for session cookies
 
 # Issues Resolved #
-See [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
+See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
 
 - `WAXmlCanvas builder` now returns a ready to use builder
 - `WADynamicVariable` now uses `GRDynamicVariable` which uses the native `DynamicVariable` if supported on the platform
