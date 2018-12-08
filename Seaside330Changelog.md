@@ -53,11 +53,5 @@ handleExpired: aRequestContext
 - `WAHtmlRoot` `#beXhtml10Strict`, `#beXhtml10Transitional` and `#beXhtml11` have been deprecated in favor of `#beHtml5`.
 
 # Upgrading #
-We recommend loading the code into a new image. If that's not possible for you try the following procedure:
-```smalltalk
-WAServerManager default stopAll.
-WAServerManager instVarNamed: 'default' put: nil`.
-"register your sever adapter"
-WAEnvironment reloadApplications
-"register your applications again, remove what you don't need"
-```
+
+No know issues upgrading from 3.2.x
