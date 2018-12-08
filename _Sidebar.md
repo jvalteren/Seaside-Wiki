@@ -1,5 +1,4 @@
 Changelogs
- * [[Past Releases|Past-Releases]]
  * [[3.3.0|Seaside330Changelog]]
  * [[3.2.4|Seaside324Changelog]]
  * [[3.2.2|Seaside322Changelog]]
@@ -20,6 +19,7 @@ Changelogs
  * [[3.0.2|Seaside302Changelog]]
  * [[2.8|Seaside28Changelog]]
  * [[2.7|Seaside27Changelog]]
+ * [[Past Releases|Past-Releases]]
 
 Development
  * [[Contributing|https://github.com/SeasideSt/Seaside/blob/master/CONTRIBUTING.md]]
