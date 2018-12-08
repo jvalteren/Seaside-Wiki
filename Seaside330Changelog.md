@@ -20,10 +20,11 @@ Seaside 3.3 includes [Grease 1.4](https://github.com/SeasideSt/Grease/wiki/Greas
 - SameSite Strict is used for session cookies
 
 # Issues Resolved #
-[Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1)
+See [Issues resolved](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
 
 - `WAXmlCanvas builder` now returns a ready to use builder
-- render phase continuation and `JSObject` now uses the script generator configured on the application
+- `WADynamicVariable` now uses `GRDynamicVariable` which uses the native `DynamicVariable` if supported on the platform
+- Render phase continuation and `JSObject` now uses the script generator configured on the application
 - `WAErrorHandler` now sets the charSet attribute of the content type
 - The `REST` group in the Metacello baseline no longer contains the `Seaside-Component` package
 - Expired sessions tracked with cookies should no result in an infinite redirect
