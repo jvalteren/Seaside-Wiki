@@ -1,6 +1,6 @@
 **Seaside 3.3.0 has not yet been released.**
 
-Seaside 3.3 includes [Grease 1.4](https://github.com/SeasideSt/Grease/wiki/Grease-1.4-Changelog)
+Seaside 3.3 includes [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Grease-1.4-Changelog)
 
 # New Features #
 - Pharo 7 supported
@@ -18,6 +18,7 @@ Seaside 3.3 includes [Grease 1.4](https://github.com/SeasideSt/Grease/wiki/Greas
 - `#noAutocomplete` is also understood by inputs
 - some of the icons of the development tools have been updated to vector graphics so that they should look better on high-DPI screens
 - SameSite Strict is used for session cookies
+- The Zinc-Seaside adaptor is now loaded from this repository instead of Zinc's main repo.
 
 # Issues Resolved #
 See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
