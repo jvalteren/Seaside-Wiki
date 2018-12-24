@@ -2,8 +2,8 @@
 
 Seaside 3.3 includes [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Grease-1.4-Changelog)
 
-# New Features #
-- Pharo 7 supported
+# New Features and Other Improvements #
+- Support for Pharo 7
 - Seaside-REST now supports the OPTIONS and PATCH http verbs
 - The Seaside-REST-Examples package has been added which contains examples on how to use Seaside REST
 - Seaside now generates HTML-style boolean attributes instead of XML-style boolean attributes, `checked` instead of `checked="checked"`
@@ -12,13 +12,16 @@ Seaside 3.3 includes [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Gre
 - jQuery-UI binding was updated to 1.12.1 (see https://jqueryui.com/upgrade-guide/1.12/ for how to upgrade)
 - HTML document root now supports directly passing a style sheet or Javascript as a String
 - `#initializeCache` can be sent to an application after changing the cache configuration for the changes to take effect
-- the MIME types for .sass and .scss are now supported
+- The MIME types for .sass and .scss are now supported
 - `WAEnterpriseAuberginesStrategy` has been added which tracks session similar to Tomcat/Java EE/Servlet with a "JSESSIONID" cookie and a "jsessionid" path parameter so that existing sticky session load balancers can be used
-- a mapping for Prototype's `PeriodicalExecuter` has been added
-- `#noAutocomplete` is also understood by inputs
-- some of the icons of the development tools have been updated to vector graphics so that they should look better on high-DPI screens
+- A mapping for Prototype's `PeriodicalExecuter` has been added
+- `#noAutocomplete` is now also understood by input fields
+- Some of the icons of the Pharo development tools have been updated to vector graphics so that they should look better on high-DPI screens
 - SameSite Strict is used for session cookies
 - The Zinc-Seaside adaptor is now loaded from this repository instead of Zinc's main repo.
+- 
+
+# Improvements #
 
 # Issues Resolved #
 See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
@@ -30,6 +33,7 @@ See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside
 - The `REST` group in the Metacello baseline no longer contains the `Seaside-Component` package
 - Expired sessions tracked with cookies should no result in an infinite redirect
 - The bundled Prototype JavaScript library has been updated from 1.7.0 to 1.7.3 which fixes multi select lists
+- Platform-specific optimizations are now used in the implementation of `WADynamicVariable`. The implementation has moved to [Grease](https://github.com/SeasideSt/Grease/).
 
 # Breaking Changes #
 
