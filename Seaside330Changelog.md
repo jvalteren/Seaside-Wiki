@@ -1,5 +1,3 @@
-**Seaside 3.3.0 has not yet been released.**
-
 Seaside 3.3 requires [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Grease-1.4-Changelog)
 
 # New Features and Other Improvements #
