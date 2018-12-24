@@ -1,6 +1,6 @@
 **Seaside 3.3.0 has not yet been released.**
 
-Seaside 3.3 includes [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Grease-1.4-Changelog)
+Seaside 3.3 requires [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Grease-1.4-Changelog)
 
 # New Features and Other Improvements #
 - Support for Pharo 7
@@ -19,9 +19,8 @@ Seaside 3.3 includes [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Gre
 - Some of the icons of the Pharo development tools have been updated to vector graphics so that they should look better on high-DPI screens
 - SameSite Strict is used for session cookies
 - The Zinc-Seaside adaptor is now loaded from this repository instead of Zinc's main repo.
-- 
-
-# Improvements #
+- Platform-specific optimizations are now used in the implementation of `WADynamicVariable`. The implementation has moved to [Grease](https://github.com/SeasideSt/Grease/).
+- The xhtml validate tool plugin has been removed (see https://github.com/SeasideSt/Seaside/issues/1024)
 
 # Issues Resolved #
 See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
@@ -33,7 +32,7 @@ See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside
 - The `REST` group in the Metacello baseline no longer contains the `Seaside-Component` package
 - Expired sessions tracked with cookies should no result in an infinite redirect
 - The bundled Prototype JavaScript library has been updated from 1.7.0 to 1.7.3 which fixes multi select lists
-- Platform-specific optimizations are now used in the implementation of `WADynamicVariable`. The implementation has moved to [Grease](https://github.com/SeasideSt/Grease/).
+
 
 # Breaking Changes #
 
