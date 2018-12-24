@@ -17,14 +17,13 @@ Seaside 3.3 requires [Grease 1.4.1](https://github.com/SeasideSt/Grease/wiki/Gre
 - Some of the icons of the Pharo development tools have been updated to vector graphics so that they should look better on high-DPI screens
 - SameSite Strict is used for session cookies
 - The Zinc-Seaside adaptor is now loaded from this repository instead of Zinc's main repo.
-- Platform-specific optimizations are now used in the implementation of `WADynamicVariable`. The implementation has moved to [Grease](https://github.com/SeasideSt/Grease/).
+- Platform-specific optimizations are now used in the implementation of `WADynamicVariable`: it now uses `GRDynamicVariable` which uses the native DynamicVariable if supported on the platform. see [Grease](https://github.com/SeasideSt/Grease/).
 - The xhtml validate tool plugin has been removed (see https://github.com/SeasideSt/Seaside/issues/1024)
 
 # Issues Resolved #
 See the [resolved issues for milestone 3.3](https://github.com/SeasideSt/Seaside/milestone/4?closed=1) for a complete list of issues. Some highlights:
 
 - `WAXmlCanvas builder` now returns a ready to use builder
-- `WADynamicVariable` now uses `GRDynamicVariable` which uses the native `DynamicVariable` if supported on the platform
 - Render phase continuation and `JSObject` now uses the script generator configured on the application
 - `WAErrorHandler` now sets the charSet attribute of the content type
 - The `REST` group in the Metacello baseline no longer contains the `Seaside-Component` package
