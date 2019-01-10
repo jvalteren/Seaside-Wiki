@@ -21,9 +21,9 @@ Here is a complete list of Metacello groups you can use, with a small descriptio
 * **Development**: Development tools
 * **Slime**: Lint rules 
 
-All the web server adaptors are also contained in separate groups. You need at least one adaptor to serve your Seaside application. We recommend 
+All the web server adaptors are also contained in separate groups. You need at least one adaptor to serve your Seaside application.
 
-* **Zinc**: Default in Pharo (http://zn.stfx.eu/zn/index.html)
+* **Zinc**: Default (and recommended) in Pharo (http://zn.stfx.eu/zn/index.html)
 * **WebClient**: Squeak only. (http://ss3.gemstone.com/ss/WebClient.html)
 * **Swazoo**: http://www.squeaksource.com/@nRFs5PD_3rsW_l2b/z59e7NTB
 * **Kom**
