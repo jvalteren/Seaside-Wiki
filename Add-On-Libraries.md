@@ -5,7 +5,7 @@ Some useful add-on libraries:
   * [Gettext](Gettext) How to localize Seaside applications using gettext.
   * [Heimdall](https://github.com/DuneSt/Heimdall) is a login identification system directly usable for seaside.
   * [JQueryMobile](http://jquerymobile.seasidehosting.st/) Seaside integration - build mobile sites and applications that work across a range of smartphones with Seaside.
-  * [JQWidgetBox](http://www.squeaksource.com/JQueryWidgetBox/) JQuery Widgets with Seaside integration
+  * [JQWidgetBox](http://www.squeaksource.com/JQueryWidgetBox) JQuery Widgets with Seaside integration
   * [Magritte 3](http://source.lukas-renggli.ch/magritte3/) a meta-description framework for annotating your model objects to automate generation of forms, tables, reports etc
   * [Magritte-JSON](http://source.lukas-renggli.ch/magritte3addons/) and [Magritte-XML](http://source.lukas-renggli.ch/magritte3addons/), read and store your Magritte described models in JSON and XML
   * [MaterialDesignLite](https://github.com/DuneSt/MaterialDesignLite) binds the google's Material Design Lite project to Seaside and builds widgets on top of Material Design 
