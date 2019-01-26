@@ -1,5 +1,4 @@
 Some useful add-on libraries:
-  * [Amazon Web Service](http://blog.doit.st) (AWS) support includes: SimpleDB persistency service, SQS queing service and S3 storage service. Work on EC2, RDS and SNS support is in progress.
   * [AJP](http://www.squeaksource.com/ajp) connector for Seaside. Efficient communications between front end servers (Apache, Nginx) to backend Seaside instances.
   * [ChartJs](https://github.com/DuneSt/ChartJs) is a Seaside binding for ChartJS
   * [DBXTalk](http://dbxtalk.smallworks.com.ar) Smalltalk to relational databases via [OpenDBX](http://en.wikipedia.org/wiki/OpenDBX) and [Glorp](https://groups.google.com/forum/?fromgroups#!forum/glorp-group).
