@@ -1,5 +1,5 @@
 Some useful add-on libraries:
-  * [AJP](http://www.squeaksource.com/ajp) connector for Seaside. Efficient communications between front end servers (Apache, Nginx) to backend Seaside instances.
+  * [AJP](http://www.squeaksource.com/ajp.html) connector for Seaside. Efficient communications between front end servers (Apache, Nginx) to backend Seaside instances.
   * [ChartJs](https://github.com/DuneSt/ChartJs) is a Seaside binding for ChartJS
   * [DBXTalk](http://dbxtalk.smallworks.com.ar) Smalltalk to relational databases via [OpenDBX](http://en.wikipedia.org/wiki/OpenDBX) and [Glorp](https://groups.google.com/forum/?fromgroups#!forum/glorp-group).
   * [Gemstone Seaside](http://code.google.com/p/glassdb/) a professional, supported [OODB](http://en.wikipedia.org/wiki/Object_database) for Smalltalk.
